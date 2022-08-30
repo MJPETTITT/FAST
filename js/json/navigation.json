@@ -1,0 +1,659 @@
+{
+	"projID": "FW001",
+	"projTitle": "Fast Workbook",
+	"numOfModules":7,
+	"videoPath":"",
+	"simulationpath":"",
+	"activitypath":"",
+	"modules": [
+		{
+			"modName": "INTRODUCTION",
+			"chapters":
+			[
+					{
+						"title":"Warning",
+						"StepsCompleted":true,
+						"lessons":[]
+					},
+					{
+						"title":"Getting Started",
+						"StepsCompleted":false,
+						"lessons":[]
+					},
+					{
+						"title":"Overview",
+						"StepsCompleted":false,
+						"lessons":[]
+					},
+					{
+						"title":"What is Ahead",
+						"StepsCompleted":false,
+						"lessons":[]
+					},
+					{
+						"title":"How to use this Primer",
+						"StepsCompleted":false,
+						"lessons":[]
+					},
+					{
+						"title":"Meet the Faculty",
+						"StepsCompleted":false,
+						"lessons":[]
+					}
+			]
+		},
+		{
+			"modName": "STARTUP AQUASAIL",
+			"chapters":[
+				{
+					"title":"Introduction",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Aquasail Startup",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Mini-Lecture: Balance Sheet",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Balance Sheet [Workbook]",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Where to Raise Financing",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Aquasail",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Sources of Funds",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Aquasail",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Key Concepts",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Conclusion",
+					"StepsCompleted":false,
+					"lessons":[]
+				}
+			]
+		},
+		{
+			"modName": "YEAR 1",
+			"chapters":[
+				{
+					"title":"Quarter 1 (Y1Q1)",
+					"StepsCompleted":false,
+					"lessons":[
+						{
+							"title":"Introduction",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Raw Materials [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Labour [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Services [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Sales [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Mini-Lecture: Profit-and-Loss",
+							"StepsCompleted":false
+						},
+						{
+							"title":"(Aquasail) Profit-and-Loss Statement [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Depreciation",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail's Total Depreciation",
+							"StepsCompleted":false
+						},
+						{
+							"title":"(Aquasail) Profit-and-Loss with Depreciation [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"(Aquasail) Calculate EBIT [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Understanding Depreciation",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Understanding EBIT",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Key Concepts",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Conclusion",
+							"StepsCompleted":false
+						}
+					]
+				},
+				{
+					"title":"Quarter 2 (Y1Q2)",
+					"lessons":[
+						{
+							"title":"Introduction",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Raw Materials [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Labour [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Services [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Sales [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"EBIT",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Calculate Q2EBIT",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Profit-and-Loss Statement",
+							"StepsCompleted":false
+						},
+						{
+							"title":"(Aquasail) Profit-and-Loss Statement [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Direct Costs Method",
+							"StepsCompleted":false
+						},
+						{
+							"title":"(Aquasail) Direct Costs Method [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Calculate EBIT Using Direct Costs Method",
+							"StepsCompleted":false
+						},
+						{
+							"title":"The Full Cost Method",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Calculate EBIT Using Full Costs Method",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Conclusion & Concepts",
+							"StepsCompleted":false
+						}						
+					]
+				},
+				{
+					"title":"Quarter 3 (Y1Q3)",
+					"lessons":[
+						{
+							"title":"Introduction",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Labour [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Services [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Sales [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Profit-and-Loss Statement",
+							"StepsCompleted":false
+						},
+						{
+							"title":"(Aquasail) Profit-and-Loss Statement [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Review",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Conclusion",
+							"StepsCompleted":false
+						}
+					]
+				},
+				{
+					"title":"Quarter 4 (Y1Q4)",
+					"lessons":[
+						{
+							"title":"Introduction",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Raw Materials [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Cashflow Profit-and-Loss [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Cash Book [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (PAF PAL [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Types of Cash Flow",
+							"StepsCompleted":false
+						},
+						{
+							"title":"(Aquasail) Balance Sheet: Assets [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"(Aquasail) Balance Sheet: Equity & Liabilities [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"The Balance Sheet in Detail",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Conclusion",
+							"StepsCompleted":false
+						}						
+						
+					]
+				}
+			]
+		},
+		{
+			"modName": "INTRODUCING LIQUIDITY",
+			"numOfChapters": 12,
+			"chapters":[
+				{
+					"title":"Introduction",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"A Static View of Liquidity",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Current Ratio and Acid Test [Workbook]",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"A Dynamic View of Liquidity",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"The Operating Cycle of a Company",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Working Capital",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Examples",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Calculate NWC and WCR [Workbook]",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Lowest WCR",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Liquidity Ratios",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Liquidity Quick Quiz",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Understanding Liquidity",
+					"StepsCompleted":false,
+					"lessons":[]
+				}	
+			]
+		},
+		{
+			"modName": "INTRODUCING PROFITABILITY",
+			"numOfChapters": 15,
+			"chapters":[
+				{
+					"title":"Introduction",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Operational Profitability",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Return on Assets",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Calculate ROA [Workbook]",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Profitability: Quick Quiz",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Return on Equity",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Financial Leverage Effect",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Calculate Financial Leverage Effect [Workbook]",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Calculate ROE [Workbook]",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Return on Equity Quick Quiz",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Benchmarking ROA and ROE",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Benchmarking ROA",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"The Ratios",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Ratios Quick Quiz",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Conclusion",
+					"StepsCompleted":false,
+					"lessons":[]
+				}
+			]
+		},
+		{
+			"modName": "YEAR 2",
+			"numOfChapters": 4,
+			"chapters":[
+				{
+					"title":"QUARTER 1 (Y2Q1)",
+					"StepsCompleted":false,
+					"lessons":[
+						{
+							"title":"Introduction",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Year 2 Budget",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Other Changes [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Year 2: Quarter 1",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail (Cash Statement [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Profit-and-Loss Statement [Workbook]",
+							"StepsCompleted":false
+						}
+					]
+				},
+				{
+					"title":"QUARTER 2 (Y2Q2)",
+					"StepsCompleted":false,
+					"lessons":[
+						{
+							"title":"Aquasail (Cash Statement [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Profit-and-Loss Statement [Workbook]",
+							"StepsCompleted":false
+						}
+					]
+				},
+				{
+					"title":"QUARTER 3 (Y2Q3)",
+					"StepsCompleted":false,
+					"lessons":[
+						{
+							"title":"Aquasail (Cash Statement [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Profit-and-Loss Statement [Workbook]",
+							"StepsCompleted":false
+						}
+					]
+				},
+				{
+					"title":"QUARTER 4 (Y2Q4)",
+					"StepsCompleted":false,
+					"lessons":[
+						{
+							"title":"Aquasail (Cash Statement [Workbook])",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Profit-and-Loss Statement [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Year 2 EBIT [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Aquasail",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Y2 Profit Before Tax [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Taxes [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Cash Balance [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Year End Analysis [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Liquidity Ratios [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Mini-Lecture: Liquidity",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Profitability Ratios [Workbook]",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Mini-Lecture: Profitability",
+							"StepsCompleted":false
+						},
+						{
+							"title":"Conclusion",
+							"StepsCompleted":false
+						}
+					]
+				}
+			]
+		},
+		{
+			"modName": "INTRODUCING SOLVENCY",
+			"numOfChapters": 13,
+			"chapters":[
+				{
+					"title":"Introduction",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"A Static View of Solvency",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Debt Ratios: Year 1 [Workbook]",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Debt Ratios: Year 2 [Workbook]",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Mini-lecture: Cash Flow vs. Profit",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"A Dynamic View of Solvency",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Dynamic Solvency Ratios",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Debt Repayment Capacity: Year 1 [Workbook]",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Debt Repayment Capacity: Year 2 [Workbook]",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Solvency: Quick Quiz",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Conclusion",
+					"StepsCompleted":false,
+					"lessons":[]
+				},
+				{
+					"title":"Primer Evaluation",
+					"StepsCompleted":false,
+					"lessons":[]
+				}
+			]
+		}
+    ] 
+}

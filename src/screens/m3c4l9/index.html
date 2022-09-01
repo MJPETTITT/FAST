@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m3c4l9/style.css">
+	<script type="text/javascript" src="src/screens/m3c4l9/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_3/Y1Q4/cd130-01.jpg',
+		'assets/images/screens/module_3/Y1Q4/cd130-02.png',	
+		'assets/images/screens/module_3/Y1Q4/cd130-03.png',	
+		'assets/images/screens/module_3/Y1Q4/cd130-04.png',	
+		'assets/images/screens/module_3/Y1Q4/cd130-05.png'	
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer color" data-key="enter" data-active='0' style="display:none" data-active="1">
+		<div class="montage-nav">
+			<div data-ui="arrowLeft" data-arrow="left" class="arrow prev-arrow clickable disabled">
+				<svg xmlns="http://www.w3.org/2000/svg" width="29.1" height="19.6">
+				  <path d="M13.5.4L1 11.7c-.6.6-1 1.4-1 2.3v4.9c0 .8.5 1 1 .5L13.5 8.7c.6-.5 1.5-.5 2.1 0l12.5 10.7c.6.5 1 .3 1-.5V14c-.1-.9-.4-1.7-1-2.3L15.6.4c-.6-.5-1.5-.5-2.1 0z" fill="#fff"></path>
+				</svg>
+			</div>
+			<div class="dots">
+				<span data-ui="dots" class="dot active" data-index="0">1</span>                 
+                <span data-ui="dots" class="dot" data-index="1">2</span>
+				<span data-ui="dots" class="dot" data-index="2">3</span>
+				<span data-ui="dots" class="dot" data-index="3">4</span>
+
+            </div>
+            <div data-ui="arrowRight" data-arrow="right" class="arrow next-arrow clickable">
+				<svg xmlns="http://www.w3.org/2000/svg" width="29.1" height="19.6">
+                  <path d="M15.6 19.2L28.1 7.9c.6-.6 1-1.4 1-2.3V.7c0-.8-.5-1-1-.5L15.6 10.9c-.6.5-1.5.5-2.1 0L1 .3C.5-.2 0 0 0 .7v4.8c.1.9.4 1.7 1 2.3l12.5 11.3c.6.6 1.5.6 2.1.1z" fill="#fff"></path>
+				</svg>
+            </div>
+        </div>
+		<div data-ui="stepInner" class="step-holder-inner" >
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step text-right active" data-index="0" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">FIXED ASSETS</h3>
+								<div class="inner-text">
+									<p>Let’s look at the <b>balance sheet</b> in more detail. First, fixed assets, or all assets that have a lifetime that extends over more than a year, have decreased with the amount of depreciations. This reflects that the value of buildings and machinery decreases with their use.</p>
+									<p><i>Use the down arrow on the left to find out more.</i></p>
+								</div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_3/Y1Q4/cd130-02.png" class="montage-graphic">
+					</div>
+                </div>
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step next" data-index="1" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								  CURRENT ASSETS
+								</h3>
+								<div class="inner-text">
+									<p>Second, current assets, which show all assets that are expected to remain in the company for less than 1 year, now comprise inventories, accounts receivable and cash. </p>
+									<p>Two types of inventories are shown: raw materials and finished goods, which amount to the direct cost of 5 unsold sailboats. Accounts receivable represent the <b>invoice</b> of 4400 sent to the customers who did not pay yet.</p>
+								</div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_3/Y1Q4/cd130-03.png" class="montage-graphic">
+					</div>
+                </div>                
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step" data-index="2" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								  SHAREHOLDERS' EQUITY
+								</h3>
+								<div class="inner-text">
+									<p>Third, Aquasail generated 300 profits after taxes for its shareholders. A company can either decide to pay out the profits as dividends to its shareholders, or retain them in the company to put them to further use. </p>
+									<p>As a startup company, Aquasail decided not to pay any dividends yet. The profits are therefore shown as retained earnings and are part of the equity, which reflects that they eventually accrue to the shareholders.</p>
+								</div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_3/Y1Q4/cd130-04.png" class="montage-graphic">
+					</div>
+                </div>               
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step text-left" data-index="3" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								  LIABILITIES
+								</h3>
+								<div class="inner-text">
+									<p>Fourth, liabilities are composed of the unpaid <b>invoice</b> from suppliers, or the <b>accounts payable</b>, and the remaining <b>bank debt</b> amounting to 21000. </p>
+									<p>Remark that, for accounting purposes, this 21000 remaining <b>bank debt</b> is split in 2 parts: 1 part that is payable within the year, 3000, and the remainder that is due after a year, or 18000. As such, the <b>balance sheet</b> clearly distinguishes between all short term or current liabilities, and long term debt. Current liabilities show all short term liabilities, due within a year. Here, they are the sum of the bank debt that has to repaid to the bank within the year and the accounts payable.</p>
+								</div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_3/Y1Q4/cd130-05.png" class="montage-graphic">
+					</div>
+                </div>
+                
+         </div>
+	</div>
+	
+</body>
+</html>

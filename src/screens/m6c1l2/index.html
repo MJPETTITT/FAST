@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m6c1l2/style.css">
+	<script type="text/javascript" src="src/screens/m6c1l2/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_6/Y2Q1/fa020-01.jpg',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer" >
+		<div class="content">
+			<div class='panel'>
+				<div class="text-content">
+						<h1 class="title-text">YEAR 2 BUDGET</h1>	
+						<div class="directions-text"><p><b>Select the workbook overlay to view the Year 2 budget.</b></p></div>
+						<div class="primary-text">
+							<p>Welcome to Aquasail’s second year. First, make sure that you understand Aquasail’s new <b>budget</b> for Year 2. The main change with Year 1 is that Aquasail will only assemble 2 boats per quarter, rather than 4, in order to decrease its inventory of boats.</p>
+							<p>The direct costs to assemble a boat do not change: wages amount to <b>500</b> and raw materials to <b>1000</b>. But quarterly services drop to <b>600</b>. Depreciations do not change either, at <b>400</b> per quarter.</p>
+							<p>As Aquasail will now assemble 2 boats per quarter, you only buy 2 units of raw materials per quarter, amounting to <b>2000</b>. Note that Aquasail always keeps an inventory of 2000 of raw materials. Raw materials are always paid with 1 quarter payment delay.</p>
+							<p>The sales price remains <b>2200</b> per boat. Aquasail will sell <b>3</b> boats in the first quarter. No sales are paid cash; you always send an invoice to the customers which you collect the next quarter. In Year 2, Aquasail will sell again sell 11 boats, the same number as in Year 1.</p>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

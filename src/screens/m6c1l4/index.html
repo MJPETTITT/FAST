@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m6c1l4/style.css">
+	<script type="text/javascript" src="src/screens/m6c1l4/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_6/Y2Q1/fa040-01.jpg',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1">
+			<div class="panel_1 holder">
+				<div class="text-content1">
+					<h1 class="title-text">YEAR 2 QUARTER 1</h1>
+					<div class="directions-text"></div>
+        
+					<div class="primary-text">
+						<p>You now will return to the Aquasail simulation and continue to work through Year 2, Quarter 1. You will first focus on the operations: assembling and selling sailboats, and its accounting implications.</p>
+						<ul>
+							<li><p>Collect money from customers (invoiced last quarter).</p></li>
+							<li><p>Pay suppliers (their invoice from last quarter).</p></li>
+							<li><p>Buy raw materials on credit, and receive a new invoice from suppliers.</p></li>
+							<li><p>Assemble 2 boats by distributing 1 unit of raw materials over each of the 2 operating Assembly Lines, and spending 500 wages per boat.</p></li>
+							<li><p>Pay 600 services.</p></li>
+						</ul>
+						<p>You will complete all the transactions for Year 2, Quarter 1 in a single visit to the simulation, and you will be asked to develop the <b>cash flow statement</b> and the P&L after having completed the first quarter of the simulation. You will update the <b>Year 2, Quarter 1 cash flow statement</b>, and the <b>Year 2, Quarter 1 profit-and-loss statement</b>. Note that your year 2 <b>cash at start figure</b> (at the top of the Year 2 <b>cash flow statement</b>) is 1200. This represents the 10200 you ended Year 1 with, minus the 9000 that you just paid to the bank to pay off some of the outstanding bank debt.</p>
+					</div>
+					<svg class="svg-angle" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 170.3 517.9" preserveAspectRatio="none">
+						<path fill="#981d97" d="M0 0v517.9L170.3 0z"></path>
+					</svg>
+				</div>
+			</div>
+			<div class="graphic-holder">
+				<img class="graphic" src="assets/images/screens/module_6/Y2Q1/fa040-01.jpg">
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m3c2l13/style.css">
+	<script type="text/javascript" src="src/screens/m3c2l13/script.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_3/Y1Q2/cb165-01.jpg',		
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer" >
+		<div class="content">
+			<div class='panel'>
+				<div class="text-content">
+					<h1 class="title-text">THE FULL COST METHOD</h1>				
+					<div class="primary-text">
+						<p>We initially used the direct cost method to value the unsold sailboat. Other cost calculation methods can be used, for example the full cost method.</p>
+						<p>In the full cost method we take into account all production costs, or <b>7200</b>, and divide this cost over the number of sailboats that were assembled during Quarter 2. The full cost of a sailboat using the full cost method is therefore:</p>
+						<p><b> 7200 / 4 = 1800</b></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

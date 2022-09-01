@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m3c2l8/style.css">
+	<script type="text/javascript" src="src/screens/m3c2l8/script.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_3/Y1Q2/cb120-01.jpg'
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1">
+			<div class="panel_1 holder">
+				<div class="text-content1">
+					<h1 class="title-text">[YEAR 1 QUARTER 2] PROFIT-AND-LOSS STATEMENT [1]</h1>
+					<div class="directions-text"></div>
+        
+					 <div class="primary-text">
+						<p>Selling 3 boats earns Aquasail <strong>6600</strong>. Wages, services and depreciation are the same as in the first quarter.</p>
+						<p><strong>Operating</strong> revenues: earned from the sale of 3 boats = <strong>6600</strong></p>
+						<p><strong>Production costs:</strong></p>
+						<ul>
+							<li>Wages: <strong>2000</strong></li>
+							<li>Services: <strong>800</strong></li>
+						</ul>
+						<p>But what is the cost related to the materials? Remember that expenses relate to the use of assets.</p>
+						<p>Inventory of raw materials is an asset of Aquasail. While it has bought <strong>6000</strong> materials, it has only used <strong>4000</strong> to assemble its 4 sailboats. The remaining <strong>2000</strong> is an asset that Aquasail still possesses, and can use next quarter. The cost related to the use of raw materials is hence <strong>4000</strong>, not <strong>6000</strong>. Note that the cost of production, relating to the 4 assembled boats, did not change. It is again <strong>7200</strong>.</p>
+					</div> 
+					<svg class="svg-angle" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 170.3 517.9" preserveAspectRatio="none">
+						<path fill="#981d97" d="M0 0v517.9L170.3 0z"></path>
+					</svg>
+				</div>
+			</div>
+			<div class="graphic-holder">
+				<img class="graphic" src="assets/images/screens/module_3/Y1Q2/cb120-01.jpg">
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

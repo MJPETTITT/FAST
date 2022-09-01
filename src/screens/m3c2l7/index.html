@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m3c2l7/style.css">
+	<script type="text/javascript" src="src/screens/m3c2l7/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_1/aa050-01.jpg',
+		'assets/images/screens/module_1/aa050-02.jpg',
+		'assets/images/screens/module_1/aa050-03.jpg'	
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1">
+			<div class="question-holder holder">
+				<div class="question standard">
+					<div class="header-panel panel_1">
+						<h1 class="title-text">[YEAR 1 QUARTER 2] CALCULATE Quarter 2 EBIT</h1>
+						<h3 class="question-text">Aquasail’s EBIT in Quarter 2 will equal…?</h3>
+						<div class="directions-text">				
+							<p>If you remember, the EBIT for Year 1, Quarter 1 was 1600. Now you have thought about how the inventory of materials and the unsold boat might impact EBIT, make a guess as to how EBIT will be affected in Quarter 2.</p>
+						</div>
+					</div>
+					<div class="response-holder">
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="number">1</div>
+							<p>-1100</p>
+						</div>
+
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="number">2</div>
+							<p>600</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="number">3</div>
+							<p>900</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="3">
+							<div class="number">4</div>
+							<p>1200</p>
+						</div>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel correct">
+							<div class="text-content1">
+								<h3 class="title-text">Answer</h3>
+								<div class="primary-text">
+									<p>The next screens will explain why both 1200 and 900 are correct answers - depending on the costs method you use! There are two costs methods: direct cost and full cost. We’ll look at them both once you’ve updated your <b>profit-and-loss statement</b> for this quarter.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

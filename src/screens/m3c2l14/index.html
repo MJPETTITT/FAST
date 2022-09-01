@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m3c2l14/style.css">
+	<script type="text/javascript" src="src/screens/m3c2l14/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_1/aa050-01.jpg',
+		'assets/images/screens/module_1/aa050-02.jpg',
+		'assets/images/screens/module_1/aa050-03.jpg'	
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1">
+			<div class="graphical-shapes">
+				<div class="angle gradient-pink angle-large angle-01"></div>
+				<div class="angle gradient-yellow angle-large angle-02"></div>
+				<div class="angle gradient-blue angle-small angle-03"></div>
+				<div class="angle gradient-blue angle-small angle-04"></div>
+			</div>
+			<div class="panel_1">
+				<h1 class="title-text">Quarter 2 EBIT USING THE FULL COSTS METHOD</h1>
+				<div class="primary-text">
+				</div>
+				<div class="question-holder">
+					<div class="question text-entry-question">
+						<h3 class="question-text">Now calculate the EBIT for Quarter 2 using the full costs method. Subtract the total <b>cost of goods sold</b> (7200-1800) from the Quarter 2 sales figure (remember that you can use the workbook button on the top bar to check the <b>profit-and-loss statement</b> for the figure). What is the EBIT of Quarter 2?</h3>
+					</div>
+				</div>
+				<div class="text-entry-holder">
+					<div>
+						<textarea data-ui="textEntryBox" placeholder="Enter text here" id="text-entry-input" rows="1" cols="40"></textarea>
+					</div>
+					<button class="btn-text submit clickable disabled">SUBMIT</button>
+				</div>
+			</div>
+			<div data-region="feedback" class="feedback-holder">
+				<div class="text-panel correct">
+					<div class="text-content1">
+						<h3 class="title-text">Answer</h3>
+						<div class="primary-text">
+							<p>The EBIT of Quarter 2 using the full costs method is 1200.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+						
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m3c1l9/style.css">
+	<script type="text/javascript" src="src/screens/m3c1l9/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_3/Y1Q1/ca130-01.jpg',
+		'assets/images/screens/module_3/Y1Q1/ca130-02.jpg'
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1">
+			<div class="panel_1">
+				<h1 class="title-text">AQUASAIL’S TOTAL DEPRECIATION</h1>
+				<div class="primary-text">
+					<p>Depreciation is an additional expense that has to be taken into account in determining Aquasail’s first quarter profit. Aquasail used its buildings and machinery for its operations and their value has decreased due to this usage.</p>
+				</div>
+				<div class="directions-text">
+					<p>Select each item to learn more.</p>
+				</div>
+			</div>
+						<div class="node-holder holder">
+							<div data-ui="nodes" class="node clickable" data-index="0">
+								<div class="node-wrapper">
+									<div class="label-holder">
+									  <h2 class="node-label">
+										BUILDINGS AND MACHINERY
+									  </h2>
+									</div>
+									<div class="node-content">
+										<div class="primary-text">
+											<p>The estimated life time of the buildings is <strong>20 years</strong> (or <strong>80 quarters</strong>), while that of the machinery is <strong>4 years</strong> (or <strong>16 quarters</strong>). After that, it is expected that these assets will not have any value any more.</p>
+											<p>Following the linear depreciation method, we estimate that the decrease in value of the assets occurs linearly over time.</p>
+											<p>The quarterly decrease in value of the buildings – or the amount that has to be depreciated – equals the buildings’ initial acquisition value, or <strong>8000 total value</strong> divided by <strong>80 quarters = 100</strong>.</p>
+											<p>The quarterly depreciation of the machinery equals <strong>4800 total value</strong> divided by <strong>16 quarters = 300</strong>.</p>
+											<p>Aquasail’s total depreciation hence amounts to <strong>100</strong> (buildings) <strong>+ 300</strong> (machinery) <strong>= 400</strong>.</p>
+										</div>
+									</div>
+								</div>
+								<div class="graphic-holder background-graphic">
+								  <div style="background-image: url('assets/images/screens/module_3/Y1Q1/ca130-01.jpg')" class="graphic"></div>
+								</div>
+							</div>
+							<div data-ui="nodes" class="node clickable" data-index="1">
+								<div class="node-wrapper">
+									<div class="label-holder">
+									  <h2 class="node-label">
+										THE LAND
+									  </h2>
+									</div>	
+									<div class="node-content">
+										<div class="primary-text">
+											<p>Note that the land is not depreciated: from an accounting point of view, it is assumed that land keeps its value; it doesn’t lose value by using it. Put differently, land has an infinite expected lifetime.</p>
+										</div>
+									</div>
+								</div>						  
+								<div class="graphic-holder background-graphic">
+								  <div style="background-image: url('assets/images/screens/module_3/Y1Q1/ca130-02.jpg')" class="graphic"></div>
+								</div>
+							</div>
+						</div>
+		</div>
+	</div>
+	
+</body>
+</html>

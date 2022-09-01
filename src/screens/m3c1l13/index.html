@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m3c1l13/style.css">
+	<script type="text/javascript" src="src/screens/m3c1l13/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_1/aa050-01.jpg',
+		'assets/images/screens/module_1/aa050-02.jpg',
+		'assets/images/screens/module_1/aa050-03.jpg'	
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1">
+			<div class="question-holder holder">
+				<div class="question standard">
+					<div class="header-panel panel_1">
+						<h1 class="title-text">Understanding EBIT</h1>
+						<h3 class="question-text">What would Aquasail's EBIT be under this assumption?</h3>
+						<div class="directions-text">				
+							<p>Assume the estimated lifetime of the machinery would be 8 years. You previously calculated quarterly depreciation for the machinery over 8 years to be 150. Remember, you can review all operating costs on Aquasail's <b>profit-and-loss statement</b> by opening your workbook.</p>
+						</div>
+					</div>
+					<div class="response-holder">
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="number">1</div>
+							<p>1750</p>
+						</div>
+
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="number">2</div>
+							<p>1450</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="number">3</div>
+							<p>1600</p>
+						</div>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel correct">
+							<div class="text-content1">
+								<h3 class="title-text">Answer</h3>
+								<div class="primary-text">
+									<p>The EBIT equals 1750, as depreciation would be 150 lower compared to the previous case, hence expenses would be lower and EBIT higher. Note that, in this situation, Aquasail would report a higher earning, but its cash situation would not change.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

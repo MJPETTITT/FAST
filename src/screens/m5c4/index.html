@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m5c4/style.css">
+	<link rel="stylesheet" href="src/screens/m5c4/Wstyle.css">
+	<script type="text/javascript" src="src/screens/m5c4/script.js"></script>
+	<script type="text/javascript" src="src/screens/m5c4/Wscript.js"></script>
+	<script type="text/javascript" src="js/required/jquery.transform2d.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_5/ea040-01.jpg',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<!-- <div class="move-box-holder">
+			<div class="downToggle" data-rot="225"><i class="down"></i></div>
+			<div class="contentStep"></div>
+		</div> -->
+		<div class="content1 profitability-table">
+				<div class='overlayWorkbook' style="display:none">
+					<div class="intro-panel statementPop">
+						<div class="text-content aquasailPop ">
+							<h4 class="title-text">CALCULATE ROA</h4>
+							<div class="primary-text">
+								<p>Input the correct figure to calculate Aquasail’s margin, asset turnover and return on assets (ROA) for Year 1. The figures you need are in the Year 1 <b>balance sheet</b> and <b>P&L</b>. Once you submit your inputs, the ratios will be automatically calculated.</p>
+							</div>         
+							<button data-Id='0' class="btn-text btn-close clickable btn-text">CONTINUE</button>
+						</div>
+					</div>
+					<div class="question workbook cash_statement">
+							
+							<div id="workbook2_Heading" style="">PROFITABILITY RATIOS</div>
+							<div id="workbook2_child0" style=""> 
+								<div class="workbook-body">
+									<div class="curly-braces large"></div>
+									<div class="workbook-row workbook-row-1 contains-curly-braces">
+										<p class="bold-text">Margin</p>
+										<div class="arithmetic-symbol color">=</div>
+											<p class="ratio-formula">
+												<span class="span-block">Operating</span>
+												<span>Profit</span>
+												<span class="ratio-divider"></span>
+												<span>Sales</span>
+											</p>
+										<div class="arithmetic-symbol color">=</div>
+										<div class="ratio-formula subitem1">
+											<span class="item"><span class="numbers90"><input type="number" step='100' class="workbook-input numbers" data-itemindex="0"></span></span>
+											<span class="ratio-divider"></span>
+											<span class="item"><span class="numbers90"><input type="number" step='100' class="workbook-input numbers" data-itemindex="0"></span></span>
+										</div>
+										<div class="arithmetic-symbol color">=</div>
+										<div class="cell-align-row subitem1">
+											<span class="item"><span class="numbers90 autoFill"></span></span>
+											<span class="arithmetic-symbol">%</span>
+										</div>
+									</div>
+									<div class="workbook-row workbook-row-divider contains-curly-braces">
+										<h2 class="arithmetic-symbol color">x</h2>
+									</div>
+									<div class="workbook-row workbook-row-2 contains-curly-braces">
+										<p class="bold-text"><span class="span-block">Assets</span> Turnover</p>
+										<div class="arithmetic-symbol color">=</div>
+										<p class="ratio-formula subitem1">
+											<span>Sales</span>
+											<span class="ratio-divider"></span>
+											<span>Assets</span>
+										</p>
+										<div class="arithmetic-symbol color">=</div>
+										<div class="ratio-formula subitem1">
+											<span class="item"><span class="numbers90"><input type="number" step='100' class="workbook-input numbers" data-itemindex="0"></span></span>
+											<span class="ratio-divider"></span>
+											<span class="item"><span class="numbers90"><input type="number" step='100' class="workbook-input numbers" data-itemindex="0"></span></span>
+										</div>
+										<div class="arithmetic-symbol color">=</div>
+										<div class="subitem1">
+											<span class="item"><span class="numbers90 autoFill"></span></span>
+										</div>
+									</div>
+									<div class="workbook-footer bold-text">
+										<h3>Return On Assets (ROA)</h3>
+										<div class="cell-align-row subitem1">
+											<span class="item"><span class="numbers90 autoFill"></span></span>
+											<span>%</span>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<button data-ui="submit" class="submit btn-text clickable disabled">SUBMIT</button>
+							<div data-region="feedback" class="feedback-holder"></div>
+					</div>
+					
+					
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel">
+							<div class="text-content">
+									<h3 class="title-text">Not Quite</h3>
+									<div class="primary-text"><p>Be sure to indicate the move of 1100 in all fields.</p></div>
+									<button data-ui="close" class="btn-close show clickable btn-icon"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m4c12/style.css">
+	<script type="text/javascript" src="src/screens/m4c12/script.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_4/da115-01.jpg',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer" >
+		<div class="content">
+			<div class='panel'>
+				<div class="text-content">
+						<h1 class="title-text">UNDERSTANDING LIQUIDITY</h1>				
+						<div class="primary-text">
+							<p>Having sufficient liquidity is key for firm survival, as firms are not forced into bankruptcy because of losses but because of their inability to meet payment commitments, towards e.g. banks, employees or suppliers, due to a lack of cash. Consequently, companies may be unprofitable for several years and yet avoid bankruptcy, as long as they can afford to pay for their bills. A famous example here is Sony Corporation, which is still alive despite its history of 5 years of losses. Liquidity thus is vital to a company hence the famous saying: Cash is king. Evidently, given the relationship discussed earlier between cash flows and profits, sustained profitability issues will at some point instigate liquidity problems.</p>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

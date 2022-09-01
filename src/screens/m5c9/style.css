@@ -1,0 +1,254 @@
+.activityContainer{
+	position:relative;
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	background: url(../../../assets/images/screens/module_5/ea080-01.jpg) no-repeat center center;
+	background-size:cover;
+    top: 48px;
+    height: calc(100% - (48px + 0px));
+	display:none;
+}
+.activityContainer::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    -webkit-transition: background-color 300ms;
+    transition: background-color 300ms;
+    content: '';
+	background-color:rgba(228, 228, 228, 0.75);
+}
+body {
+    color: #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font: 16px "font-primary", arial;
+    line-height: 24px;
+}
+/* 
+.activityContainer::after {
+    width: 60%;
+    min-width: 750px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #00a3ad;
+    opacity: 0.15;
+    -webkit-transform: skew(25deg);
+    -ms-transform: skew(25deg);
+    transform: skew(25deg);
+    z-index: -2;
+    content: '';
+} 
+.activityContainer .content1::before {
+    width: 100px;
+    height: 155px;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, right top, from(#c8d325), to(#f3e500));
+    background: linear-gradient(to right, #c8d325 0%, #f3e500 100%);
+    -webkit-transform: skew(-25deg);
+    -ms-transform: skew(-25deg);
+    transform: skew(-25deg);
+    content: '';
+    z-index: -1;
+	top: 0;
+    left: -65px;
+} 
+.activityContainer .content1::after {
+    width: 100px;
+    height: 155px;
+    position: absolute;
+    background: -webkit-gradient(linear, left top, right top, from(#c8d325), to(#f3e500));
+    background: linear-gradient(to right, #c8d325 0%, #f3e500 100%);
+    -webkit-transform: skew(-25deg);
+    -ms-transform: skew(-25deg);
+    transform: skew(-25deg);
+    content: '';
+    z-index: -1;
+	
+	    bottom: 0;
+    right: -65px;
+}*/
+.content1{
+  display: -webkit-box;
+	display: -webkit-flex;	
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow-y: auto;
+	overflow-x: hidden;
+	   
+}
+.profitability-table .question .workbook-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0;
+    -ms-flex: 1 0;
+    flex: 1 0;
+}
+.profitability-table .question .curly-braces.large {
+    width: 35px;
+    height: 254px;
+    bottom: 0;
+    margin: auto 0;
+}
+.profitability-table .question  .curly-braces {
+    position: absolute;
+    top: 15px;
+    left: calc(100% - 145px);
+    background: url(../../../assets/images/workbook-curly-braces.svg) no-repeat 0 0;
+}
+.profitability-table .question .workbook-body .workbook-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+	width:85%;
+}
+.profitability-table .question .workbook-body .workbook-row.divider-1{
+	width: 75%;
+	margin-left: 30px;
+}
+.profitability-table .contains-curly-braces {
+    padding-right: 36px !important;
+}
+.profitability-table .question .workbook-body .workbook-row > * {
+    margin: 0 2px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.profitability-table .question .workbook-body .arithmetic-symbol.color {
+    width: 35px;
+    color: #981d97;
+    font-size: 30px;
+    font-weight: 900;
+}
+.profitability-table p, .profitability-table .numbers {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 120%;
+}
+.workbook-viewer .span-block {
+    display: block !important;
+}
+.workbook-viewer .ratio-divider {
+    width: 100%;
+    height: 2px;
+    margin: 8px 0;
+    display: block;
+    background-color: #9e9e9e;
+}
+.profitability-table .question .workbook-body .arithmetic-symbol.color {
+    width: 35px;
+    color: #981d97;
+    font-size: 30px;
+    font-weight: 900;
+}
+.profitability-table .question .workbook-body .cell-align-row {
+    -webkit-box-flex: 0 !important;
+    -webkit-flex: 0 0 auto !important;
+    -ms-flex: 0 0 auto !important;
+    flex: 0 0 auto !important;
+	width:auto;
+}
+.workbook-viewer .cell-align-row {
+    text-align: center;
+}
+.profitability-table .question .workbook-footer {
+    width: 170px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: rgba(62, 177, 200, 0.3);
+	
+	position: absolute;
+top: 0;
+left: calc(100% - 135px);
+height: 200px;
+}
+.workbook-footer-cell{
+position: absolute;
+top: 70px;
+left: calc(100% - 150px);
+width: 170px;
+}
+.profitability-table .question .workbook-footer h3 {
+    font-size: 18px;
+}
+.span-block {
+    display: block !important;
+}
+
+
+
+
+
+.profitability-table.profitability-custom > .workbook-body .workbook-row:not(.workbook-row-divider) > *:not(.arithmetic-symbol) {
+    width: 85px;
+}
+.profitability-table .question .workbook-body .arithmetic-symbol.color {
+    width: 35px;
+    color: #981d97;
+    font-size: 30px;
+    font-weight: 900;
+}
+.profitability-table .question1 .workbook-body .workbook-row{
+//width: 67%;
+}
+.profitability-table .question1 .workbook-body .workbook-row.divider-1{
+//width: 58%;
+}
+.profitability-table .question1 .curly-braces{
+left: calc(100% - 330px);
+}
+.profitability-table .question1 .workbook-footer-cell{
+left: calc(100% - 340px);
+}
+.profitability-table .question1 .workbook-footer{
+top: -40px;
+left: calc(100% - 140px);
+}
+.profitability-table .question1 .curly-braces.large{
+left: calc(100% - 175px);
+top: -200px;
+}
+.question1 .subitem1 .numbers90{
+//width: 85px !important;
+}

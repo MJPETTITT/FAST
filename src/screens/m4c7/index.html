@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m4c7/style.css">
+	<script type="text/javascript" src="src/screens/m4c7/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_4/da070-01.jpg',
+		'assets/images/screens/module_4/da070-02.png',	
+		'assets/images/screens/module_4/da070-03.png',	
+		'assets/images/screens/module_4/da070-04.png',	
+		'assets/images/screens/module_4/da070-05.png',	
+		'assets/images/screens/module_4/da070-06.png',	
+		'assets/images/screens/module_4/da070-07.png',	
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer color" data-key="enter" data-active='0' style="display:none" data-active="1">
+		<div class="montage-nav">
+			<div data-ui="arrowLeft" data-arrow="left" class="arrow prev-arrow clickable disabled">
+				<svg xmlns="http://www.w3.org/2000/svg" width="29.1" height="19.6">
+				  <path d="M13.5.4L1 11.7c-.6.6-1 1.4-1 2.3v4.9c0 .8.5 1 1 .5L13.5 8.7c.6-.5 1.5-.5 2.1 0l12.5 10.7c.6.5 1 .3 1-.5V14c-.1-.9-.4-1.7-1-2.3L15.6.4c-.6-.5-1.5-.5-2.1 0z" fill="#fff"></path>
+				</svg>
+			</div>
+			<div class="dots">
+				<span data-ui="dots" class="dot active" data-index="0">1</span>                 
+                <span data-ui="dots" class="dot" data-index="1">2</span>
+				<span data-ui="dots" class="dot" data-index="2">3</span>
+				<span data-ui="dots" class="dot" data-index="3">4</span>
+				<span data-ui="dots" class="dot" data-index="4">5</span>
+				<span data-ui="dots" class="dot" data-index="5">6</span>
+
+            </div>
+            <div data-ui="arrowRight" data-arrow="right" class="arrow next-arrow clickable">
+				<svg xmlns="http://www.w3.org/2000/svg" width="29.1" height="19.6">
+                  <path d="M15.6 19.2L28.1 7.9c.6-.6 1-1.4 1-2.3V.7c0-.8-.5-1-1-.5L15.6 10.9c-.6.5-1.5.5-2.1 0L1 .3C.5-.2 0 0 0 .7v4.8c.1.9.4 1.7 1 2.3l12.5 11.3c.6.6 1.5.6 2.1.1z" fill="#fff"></path>
+				</svg>
+            </div>
+        </div>
+		<div data-ui="stepInner" class="step-holder-inner" >
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step active" data-index="0" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">OPTIMAL WORKING CAPITAL REQUIREMENT</h3>
+								<div class="inner-text">
+									<p>One might wonder if there is an optimal level of working capital requirement. Well, it depends. The working capital requirement is namely contingent upon the industry in which a company operates as well as the company’s strategy and business model. Very often businesses need to make a trade-off between reducing the WCR or keep/increase it in order to pursue their strategies. Let's look at a couple of examples. </p>
+								</div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_4/da070-02.png" class="montage-graphic">
+					</div>
+                </div>
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step text-left next" data-index="1" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								 TOYOTA AND AUDI
+								</h3>
+								  <div class="inner-text">
+									<p>It might be wise to implement JIT as in the Toyota example. However, then it might happen that not enough inventory is available to serve clients, potentially hurting the company’s reputation.</p>
+									<p>Another example: from a financial point of view it is advantageous to ask immediate cash payments from customers. However, this might destroy client relationships and hence reduce sales. Consequently, companies will need to find the optimal balance. Audi went a step further. It collects money from its customers for its WECARE insurance programme. It'll only have to pay its customers later, if anything happens.</p>
+								  </div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_4/da070-03.png" class="montage-graphic">
+					</div>
+                </div>                
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step" data-index="2" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								PARMA HAM
+								</h3>
+								<div class="inner-text">
+									<p>Parma ham is considered to be one of the best hams in the world and subject to several quality criteria. One of those is that the ham needs to dry 12 months. This of course entails implications for its working capital requirement as shown in the figure. Parma ham is produced in the beginning of the operating cycle. Then, it remains for at least 12 months in ‘inventory’ after which it is sold to customers.</p>
+									<p>As the diagram shows, the cash used to buy the ham’s ingredients leaves the company long before the cash from sales flows in. Hence, the gap of at least 12 months needs to be bridged. The working capital requirement is thus huge and financing it is costly, and partly explains why the ham has a high sales price. Similar examples include the champagne and whisky industry.</p>
+								</div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_4/da070-04.png" class="montage-graphic">
+					</div>
+                </div>
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step" data-index="3" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								  CARREFOUR
+								</h3>
+								  <div class="inner-text">
+									<p>French discounter Carrefour operates as a typical retailer: goods are purchased from suppliers and later sold to customers in its stores. While Carrefour, as a big market player, is able to obtain extensive supplier credits, its customers are ordinarily obliged to pay immediately. This yields an interesting situation in terms of working capital requirement: customers pay long before suppliers have to be paid.</p>
+								  </div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_4/da070-05.png" class="montage-graphic">
+					</div>
+                </div>
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step" data-index="4" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								  SPONTANEOUS FINANCING
+								</h3>
+								  <div class="inner-text">
+									<p>Instead of having a positive working capital requirement (WCR), Carrefour (like most retailers) actually has a negative requirement, i.e. it has a financing surplus with cash entering the company sooner than it is leaving. This means that Carrefour does not need to look for a positive net working capital, but instead it generates money via its operations.</p>
+								  </div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_4/da070-06.png" class="montage-graphic">
+					</div>
+                </div>
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step" data-index="5" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								  DRIVEN BY OPERATIONS
+								</h3>
+								  <div class="inner-text">
+									<p>These examples visibly clarify that working capital requirement is largely driven by a company’s operations. There is not really such a thing as the optimal WCR level, yet companies must optimise it in line with their business strategy. </p>
+								  </div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_4/da070-07.png" class="montage-graphic">
+					</div>
+                </div>
+         </div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m5c10/style.css">
+	<script type="text/javascript" src="src/screens/m5c10/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_5/ea100-01.jpg',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1">
+			<div class="question-holder holder">
+				<div class="question_1 standard FirstState">
+					<div class="header-panel panel_1">
+						<h1 class="title-text">RETURN ON EQUITY QUICK QUIZ</h1>
+						<h3 class="question-text">Let's check your understanding of ROE and the financial leverage effect with a quick quiz.</h3>
+						<div class="directions-text">				
+							<p>The use of debt…</p>
+						</div>
+					</div>
+					<div class="response-holder">
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="number">1</div>
+							<p>Always leads to a higher return on equity.</p>
+						</div>
+
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="number">2</div>
+							<p>Sometimes leads to a higher return on equity.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="number">3</div>
+							<p>Never leads to a higher return on equity.</p>
+						</div>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel correct">
+							<div class="text-content1">
+								<h3 class="title-text">Not Quite</h3>
+								<div class="primary-text">
+									<p>The use of debt leads to a higher return on equity if its return on assets exceeds its cost of debt.</p>
+								</div>
+								<button data-ui="continue1" class="btn-close clickable btn-text">CONTINUE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="question_1 standard FinalState">
+					<div class="header-panel panel_1">
+						<h1 class="title-text">RETURN ON EQUITY QUICK QUIZ</h1>
+						<h3 class="question-text">Cash Converter earns a 14 percent return on equity. Which of the following will cause the return on equity to increase?</h3>
+						<div class="directions-text">				
+							<p></p>
+						</div>
+					</div>
+					<div class="response-holder">
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="number">1</div>
+							<p>Issuing a 9% bond and investing the proceeds to earn 12%.</p>
+						</div>
+
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="number">2</div>
+							<p>Increasing the dividend.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="number">3</div>
+							<p>An increase in the market share price on the stock market.</p>
+						</div>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel">
+							<div class="text-content1">
+								<h3 class="title-text">Not Quite</h3>
+								<div class="primary-text">
+									<p>Investing at 12% with debt that costs 9% creates a positive financial leverage effect, as the return exceeds the cost of debt.</p>
+								</div>
+								<button data-ui="final_continue" class="btn-close clickable btn-text">CONTINUE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="question_1 multiselect">
+					<div class="header-holder panel_1">
+						<h1 class="title-text">RETURN ON EQUITY QUICK QUIZ</h1>
+						<h3 class="question-text">The return to shareholders will always be enhanced if a firm... (Select all that apply)</h3>
+					</div>
+					<div class="response-holder panel">
+						<div class="directions-text">
+
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="box"></div>
+							<p>Improves its asset efficiency.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="box"></div>
+							<p>Uses more debt.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="box"></div>
+							<p>Charges a higher price, without losing customers.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="3">
+							<div class="box"></div>
+							<p>Negotiates a lower interest rate on its debt.</p>
+						</div>
+						<div class="line-break"></div>
+						<button data-ui="submit" class="btn-text submit clickable">SUBMIT</button>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel correct">
+							<div class="text-content1">
+								<h3 class="title-text">Not Quite</h3>
+								<div class="primary-text">
+									<p>Improving asset efficiency and higher prices both increase the ROA, while a lower interest rate leads to a higher financial leverage effect. The use of more debt is only beneficial if ROA > i, however.</p>
+								</div>
+								<button data-ui="close" class="btn-close clickable btn-text">CONTINUE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+</body>
+</html>

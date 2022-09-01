@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m4c4/style.css">
+	<script type="text/javascript" src="src/screens/m4c4/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<!-- <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"> 
+	<script type="text/javascript" src="src/screens/m4c4/script1.js"></script>-->
+	
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_4/da040-header-block.jpg',
+		'assets/images/screens/module_4/da040-graphic-text-block-01.jpg',	
+		'assets/images/screens/module_4/da040-graphic-text-block-02.jpg'
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {
+		    $('.content-block').css('opacity','0');
+			$('.activityContainer').fadeIn(200, function(){
+				fade();
+			});					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer scrolling" style="display:none">
+	<div class="content1">
+		<div class="content-blocks-holder">
+			<div class=" header-block aos-init aos-animate" data-aos="fade-up">
+			<!--  HEADER BLOCK --> 
+				<div class="header-holder">
+					<h1 class="title-text">A Dynamic View of Liquidity</h1>
+					<div class="primary-text"></div> 
+				</div>
+				<div style="background-image: url('assets/images/screens/module_4/da040-header-block.jpg')" class="header-background-graphic background-graphic graphic"></div>
+			</div>
+			<div class="content-block short-text-block aos-init aos-animate" data-aos="fade-up">
+			<!-- SHORT TEXT BLOCK -->
+				<div class="primary-text"><span class="large-text">Scroll down to view all the information.</span> </div>
+			</div>
+			<div class="content-block subheader-block aos-init aos-animate" data-aos="fade-up">
+			<!-- SUB HEAD BLOCK -->
+				<h3 class="title-text">Working Capital</h3>
+			</div>
+			<div class="content-block short-text-block aos-init aos-animate" data-aos="fade-up">
+			<!-- SHORT TEXT BLOCK -->
+				<div class="primary-text">
+					<span class="large-text"></span> 
+					<p>Next to the static ratios, we will develop a more dynamic view on a company’s liquidity risk. We will introduce two important concepts: net working capital and working capital requirement.</p>
+				</div>
+			</div>
+			<div class="content-block graphic-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- <div class="content-block graphic-text-block aos-init aos-animate" data-aos="fade-up"> -->
+				<!-- GRAPHIC TEXT BLOCK -->
+					<div class="text-holder aos-init aos-animate" data-aos="fade-right">
+						<h3 class="title-text"></h3>
+						<div class="primary-text">
+							<p>A company’s net working capital equals its current assets minus current liabilities:</p>
+						</div>
+					</div>
+					<img src="assets/images/screens/module_4/da040-graphic-text-block-01.jpg" class="graphic aos-init aos-animate" data-aos="fade-left">
+				<!-- </div> -->
+			</div>
+			<div class="content-block long-text-block aos-init" data-aos="fade-up">
+			<!-- LONG TEXT  BLOCK -->
+				<div class="primary-text">
+					<p>Note that if the current ratio is bigger than 1, then the net working capital is positive. It is hence also often suggested that the net working capital should be positive. This, however, is not entirely true. In fact, a firm’s net working capital should be higher than its working capital requirement (WCR), which is linked to the firm’s operations and indicates how much working capital a company needs.</p>
+					<p>So why is this?</p>
+				</div>
+			</div>
+			<div class="content-block graphic-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- <div class="content-block graphic-text-block aos-init aos-animate" data-aos="fade-up"> -->
+				<!-- GRAPHIC TEXT BLOCK -->
+					<div class="text-holder aos-init aos-animate" data-aos="fade-right">
+						<h3 class="title-text"></h3>
+						<div class="primary-text">
+							<p>Let’s first take a long term view of the net working capital (NWC). As total assets equal total liabilities, the net working capital can also be calculated as Equity + Long Term Liabilities – Fixed Assets. This yields mathematically exactly the same outcome as the first calculation of NWC.
+							</p>
+						</div>
+					</div>
+					<img src="assets/images/screens/module_4/da040-graphic-text-block-02.jpg" class="graphic aos-init aos-animate" data-aos="fade-left">
+				<!-- </div> -->
+			</div>
+			
+			<div class="content-block long-text-block aos-init" data-aos="fade-up">
+			<!-- LONG TEXT  BLOCK -->
+				<div class="primary-text">
+					<p>Taking this long term perspective of net working capital shows that NWC is positive when long term funding (either equity or long term liabilities) exceed fixed assets.</p>
+					<p>Alternatively, with a positive NWC all fixed assets are financed with long term funding. This is desirable, as the maturity matching principle suggests that a firm ideally matches the maturity of its assets with the maturity of its funding. NWC is the excess of long term funding, above what is needed to finance fixed assets. A company’s NWC hence reflects the financing policy developed by the Chief Financial Officer, as it is driven by the amount of long term funding raised by the company.</p>
+				</div>
+			</div>
+			<div class="bottom-yellow-angle"></div>
+		</div>
+	</div>
+	</div>	
+</body>
+<script>		
+	function fade() {
+		var total = 0;
+		$('.content-block').each(function() {				  
+		  var objectBottom = $(this).offset().top + $(this).outerHeight();
+		  var windowBottom = $(window).scrollTop() + $(window).innerHeight();		 
+		  if (objectBottom-120 < windowBottom) {		   
+			if ($(this).css('opacity')==0) {$(this).fadeTo(400,1);$(this).addClass('fadeUp').removeClass('fadeDown');}
+		  } else {
+			if ($(this).css('opacity')==1) {$(this).fadeTo(400,0);$(this).addClass('fadeDown').removeClass('fadeUp');}
+		  }				
+			total += $(this).height();		 		
+		});		
+		if($('.content1').scrollTop() +$('.content1').innerHeight() >= $('.content1')[0].scrollHeight-40) {
+            complete_page();
+			enableNextBtn();
+        }
+	  }	
+	$('.content1').scroll(function() {fade();});
+</script>
+</html>

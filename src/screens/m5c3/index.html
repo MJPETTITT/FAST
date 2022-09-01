@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m5c3/style.css">
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script type="text/javascript" src="src/screens/m5c3/script.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_5/ea030-01.jpg',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1">
+			<div class="panel_1 holder">
+				<div class="text-content1">
+					<h1 class="title-text">RETURN ON ASSETS</h1>
+					<div class="directions-text"></div>
+        
+					<div class="primary-text">
+						<p>The ROA is analysed more in depth by splitting it in: 1) (profit) margin and 2) assets turnover.</p>
+						<p>The <b>margin</b> is EBIT divided by sales and represents how much profit the company makes for every euro of sales. The margin can increase by either increasing sales prices or lowering operating costs. The higher the margin is, the more profitable the business is. The <b>asset turnover</b>, which is sales divided by assets, shows how much sales are generated for every euro of assets invested. It can be thought of as the number of times a certain profit margin is generated during a year, as the margin is multiplied with the asset turnover to get the ROA.</p>
+						<p>A higher assets turnover is advantageous since it means that fewer assets are needed for a given level of sales. Assets turnover can thus be considered as an efficiency measure. Often, higher margins can only be obtained with a lower efficiency, thus more assets. A higher efficiency on the other hand usually also implies lower margins. For this reason, it is quite often said that companies can only concentrate on one of the 2 measures. Either a company focuses on higher margins or on more efficiency. Players with higher margins are usually referred to as differentiators, whereas players striving for maximum efficiency are cost players.</p>
+					</div>
+					<svg class="svg-angle" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 170.3 517.9" preserveAspectRatio="none">
+						<path fill="#981d97" d="M0 0v517.9L170.3 0z"></path>
+					</svg>
+				</div>
+			</div>
+			<div class="graphic-holder">
+				<img class="graphic" src="assets/images/screens/module_5/ea030-01.jpg">
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

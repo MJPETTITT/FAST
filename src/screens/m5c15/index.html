@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m5c15/style.css">
+	<script type="text/javascript" src="src/screens/m5c15/script.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_5/ea140-01.jpg',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1">
+			<div class="panel_1 holder">
+				<div class="text-content1">
+					<h1 class="title-text">CONCLUSION</h1>
+					<div class="directions-text"></div>
+        
+					<div class="primary-text">
+						<p>In this module, you have learned how to assess a firm’s profitability and value creation potential. You now know that the return on equity is driven by a firm’s margin and its asset turnover, which together determine its return on assets. This, compared with the average cost of debt, determines the effect of the use of financial leverage on the return for the shareholders.</p>
+						<p>You now understand that, in order to create value for shareholders, the return on assets should exceed the weighted average cost of capital, which represents the average cost of all funding sources used by the firm. Equivalently, the return on equity should exceed the firm’s cost of equity, which is higher the more risky the firm is. Understanding profitability is hence key in understanding value creation.</p>
+						<p>Now we've explored the liquidity and profitability ratios, it's time to return to our simulation and take Aquasail through its second year of operation. Let’s keep in mind that Aquasail has a very strong liquidity position, but its profitability is too low to create shareholder value.</p>
+					</div>
+					<svg class="svg-angle" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 170.3 517.9" preserveAspectRatio="none">
+						<path fill="#981d97" d="M0 0v517.9L170.3 0z"></path>
+					</svg>
+				</div>
+			</div>
+			<div class="graphic-holder">
+				<img class="graphic" src="assets/images/screens/module_5/ea140-01.jpg">
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

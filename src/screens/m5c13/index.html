@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m5c13/style.css">
+	<script type="text/javascript" src="src/screens/m5c13/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+
+
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_5/ea130-01.jpg',
+		'assets/images/screens/module_5/ea130-header-block.jpg',
+		'assets/images/screens/module_5/ea130-graphic-block-01.jpg',
+		'assets/images/screens/module_5/ea130-graphic-block-02.jpg',
+		'assets/images/screens/module_5/ea130-graphic-block-03.jpg',
+		'assets/images/screens/module_5/ea130-graphic-block-04.jpg',
+		'assets/images/screens/module_5/ea130-graphic-block-05.jpg',
+		'assets/images/screens/module_5/ea130-graphic-block-06.jpg',
+		'assets/images/screens/module_5/ea130-graphic-block-07.jpg',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.content-block').css('opacity','0');
+			$('.activityContainer').fadeIn(200, function(){
+				fade();
+			});				  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer scrolling" style="display:none">
+		<div class="content1">
+			<div class='overlayWorkbook' style="display:none">
+				<div class="intro-panel statementPop">
+					<div class="text-content aquasailPop ">
+						<h4 class="title-text">Did Aquasail create value?</h4>
+						<div class="primary-text">
+							<p>Remember that Aquasail’s operations generated a return on its assets (ROA) of 7,38%, which resulted in a return on equity after taxes (ROE) of 2,1%. While we do not know which risk premium Aquasail’s shareholders expect, we know that the bank asks a 10% interest on its debt. It’s clear that Aquasail was not able to generate a return that was sufficient to compensate its bank, let alone its shareholders.</p>
+						</div>         
+						<button data-Id='0' class="btn-text btn-close clickable btn-text">CONTINUE</button>
+					</div>
+				</div>
+			</div>
+			<div class="content-blocks-holder" style="display:none">
+				<div class=" header-block aos-init aos-animate" data-aos="fade-up">
+				<!--  HEADER BLOCK --> 
+					<div class="header-holder">
+						<h1 class="title-text">The Ratios</h1>
+						<div class="primary-text"></div> 
+					</div>
+					<div style="background-image: url('assets/images/screens/module_5/ea130-header-block.jpg')" class="header-background-graphic background-graphic graphic"></div>
+				</div>
+				<div class="content-block short-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- SHORT TEXT BLOCK -->
+					<div class="primary-text"><span class="large-text">Scroll down to view all the information.</span> </div>
+				</div>
+				<div class="content-block subheader-block aos-init aos-animate" data-aos="fade-up">
+				<!-- SUB HEAD BLOCK -->
+					<h3 class="title-text">Make a Note of the Ratios</h3>
+				</div>
+				<div class="content-block long-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- LONG TEXT  BLOCK -->
+					<div class="primary-text">
+						<p>On the next page you'll do a quick quiz on ratios to check your understanding. So before you start, here are the ratios again - write them down so you can refer to them in the quiz! </p>
+					</div>
+				</div>
+				<div class="content-block graphic-block aos-init aos-animate" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="assets/images/screens/module_5/ea130-graphic-block-01.jpg" class="graphic">
+				</div>
+				<div class="content-block graphic-block aos-init" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="assets/images/screens/module_5/ea130-graphic-block-02.jpg" class="graphic">
+				</div>
+				<div class="content-block graphic-block aos-init" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="assets/images/screens/module_5/ea130-graphic-block-03.jpg" class="graphic">
+				</div>
+				<div class="content-block graphic-block aos-init" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="assets/images/screens/module_5/ea130-graphic-block-04.jpg" class="graphic">
+				</div>
+				<div class="content-block graphic-block aos-init" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="assets/images/screens/module_5/ea130-graphic-block-05.jpg" class="graphic">
+				</div>
+				<div class="content-block graphic-block aos-init" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="assets/images/screens/module_5/ea130-graphic-block-06.jpg" class="graphic">
+				</div>
+				<div class="content-block graphic-block aos-init" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="assets/images/screens/module_5/ea130-graphic-block-07.jpg" class="graphic">
+				</div>
+				<div class="bottom-yellow-angle"></div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<script>		
+	function fade() {
+		var total = 0;
+		$('.content-block').each(function() {				  
+		  var objectBottom = $(this).offset().top + $(this).outerHeight();
+		  var windowBottom = $(window).scrollTop() + $(window).innerHeight();		 
+		  if (objectBottom-120 < windowBottom) {		   
+			if ($(this).css('opacity')==0) {$(this).fadeTo(400,1);$(this).addClass('fadeUp').removeClass('fadeDown');}
+		  } else {
+			if ($(this).css('opacity')==1) {$(this).fadeTo(400,0);$(this).addClass('fadeDown').removeClass('fadeUp');}
+		  }					
+			total += $(this).height();		 		
+		});		
+		if($('.content1').scrollTop() +$('.content1').innerHeight() >= $('.content1')[0].scrollHeight-40) {
+            complete_page();
+			enableNextBtn();
+        }
+	  }	
+	$('.content1').scroll(function() {fade();});
+</script>
+</html>

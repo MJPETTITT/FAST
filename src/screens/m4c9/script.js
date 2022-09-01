@@ -1,0 +1,27 @@
+$(document).ready(function(){
+	$('.activityContainer').fadeIn();
+
+	$('.response').mouseenter(function(){
+		$(this).addClass('over');
+	})
+	$('.response').mouseleave(function(){
+		$('.response').removeClass('over');
+	})
+	$('.response').on('click',function(){
+		console.log($(this).attr('data-index'))
+		if(!$(this).hasClass('disabled'))
+		{
+			if($(this).attr('data-index')=='0'){
+				$(this).addClass('correct');
+			}
+			else{
+				$('.response').eq(0).addClass('correct');
+				$(this).addClass('incorrect');
+			}
+		}
+		$('.feedback-holder').show();
+		$('.response').addClass('disabled');
+		complete_page();
+		enableNextBtn();
+	})
+})

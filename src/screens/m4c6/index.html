@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m4c6/style.css">
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script type="text/javascript" src="src/screens/m4c6/script.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_4/da060-01.jpg'
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1">
+			<div class="panel_1 holder">
+				<div class="text-content1">
+					<h1 class="title-text">WORKING CAPITAL REQUIREMENT</h1>
+					<div class="directions-text"></div>
+        
+					<div class="primary-text">
+						<p>The formula for working capital requirement is: <strong>Accounts Receivable + Inventories - Accounts Payable</strong></p>
+						<p>Given a company continuously conducts operations, the gap remains in the long run: there is a permanent working capital requirement. As this is economically a long term investment (although it does not appear like this on the <b>balance sheet</b>!), it should ideally be financed with long term funding.</p>
+						<p>Therefore, in order to reduce a company’s liquidity risk, the net working capital should be at least sufficient to cover the working capital requirement. Now we have a sound, dynamic view to assess the liquidity risk!</p>
+						<p><strong>Optimising working capital requirement</strong></p>
+						<p>As financing is not for free, companies try to optimise their working capital requirement in several ways, for instance:</p>
+						<ul>
+						<li>Pay suppliers later</li>
+						<li>Optimise inventory</li>
+						<li>Make customers pay as soon as possible</li>
+						</ul>
+						<p>The table on this screen presents possible actions and tools that may help to optimise the working capital requirement.</p>
+					</div> 
+					<svg class="svg-angle" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 170.3 517.9" preserveAspectRatio="none">
+						<path fill="#981d97" d="M0 0v517.9L170.3 0z"></path>
+					</svg>
+				</div>
+			</div>
+			<div class="graphic-holder">
+				<img class="graphic" src="assets/images/screens/module_4/da060-01.jpg">
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

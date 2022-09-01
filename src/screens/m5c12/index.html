@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m5c12/style.css">
+	<script type="text/javascript" src="src/screens/m5c12/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+
+
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_5/ea120-header-block.jpg',
+		'assets/images/screens/module_5/ea120-graphic-text-block-01.jpg',	
+		'assets/images/screens/module_5/ea120-graphic-text-block-02.jpg',	
+		'assets/images/screens/module_5/ea120-graphic-text-block-03.jpg',	
+		'assets/images/screens/module_5/ea120-graphic-text-block-04.jpg',	
+	<!-- 	'assets/images/screens/module_5/ea110-graphic-block-01.jpg' -->
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.content-block').css('opacity','0');
+			$('.activityContainer').fadeIn(200, function(){
+				fade();
+			});					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer scrolling" style="display:none">
+		<div class="content1">
+			<div class="content-blocks-holder">
+				<div class=" header-block aos-init aos-animate" data-aos="fade-up">
+				<!--  HEADER BLOCK --> 
+					<div class="header-holder">
+					<h1 class="title-text">Benchmarking ROA</h1>
+					<div class="primary-text"></div> 
+					</div>
+					<div style="background-image: url('assets/images/screens/module_5/ea120-header-block.jpg')" class="header-background-graphic background-graphic graphic"></div>
+				</div>
+				<div class="content-block short-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- SHORT TEXT BLOCK -->
+					<div class="primary-text"><span class="large-text">Scroll down to view all the information.</span> </div>
+				</div>
+				<div class="content-block subheader-block aos-init aos-animate" data-aos="fade-up">
+				<!-- SUB HEAD BLOCK -->
+					<h3 class="title-text">A second approach to benchmarking profitability</h3>
+				</div>
+				<div class="content-block long-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- LONG TEXT  BLOCK -->
+					<div class="primary-text">
+						<p>A second approach is to benchmark the ROA with the firm’s average cost of financing, i.e. the weighted average cost of capital or WACC. Assets are typically financed with a mix of equity and debt. Both debtholders and shareholders seek a compensation for their investment in the firm.</p>
+						<p>The WACC represents the weighted average cost of all financial resources in a firm. It has two main components:</p>
+						<ul>
+							<li><p>Cost of equity: the compensation (opportunity cost) required by shareholders.</p></li>
+							<li><p>Cost of debt: the interest rates charged by creditors.</p></li>
+						</ul>
+						<p>To compute the WACC, we consider the relative importance of the various financing sources and their respective costs.</p>
+					</div>
+				</div>
+				<div class="content-block graphic-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- GRAPHIC TEXT BLOCK -->
+					<div class="text-holder aos-init aos-animate" data-aos="fade-right">
+						<h3 class="title-text"></h3>
+						<div class="primary-text"><p>This is illustrated in the following example:</p></div>
+					</div>
+					<img src="assets/images/screens/module_5/ea120-graphic-text-block-01.jpg" class="graphic aos-init aos-animate" data-aos="fade-left">
+				</div>
+				<div class="content-block graphic-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- GRAPHIC TEXT BLOCK -->
+					<div class="text-holder aos-init aos-animate" data-aos="fade-right">
+						<h3 class="title-text"></h3>
+						<div class="primary-text"><p>In this example, assets are financed with 67% equity and 33% debt. The cost of equity is 15%, while the cost of debt is 9%. This leads to a WACC of 13%:</p></div>
+					</div>
+					<img src="assets/images/screens/module_5/ea120-graphic-text-block-02.jpg" class="graphic aos-init aos-animate" data-aos="fade-left">
+				</div>
+				<div class="content-block long-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- LONG TEXT  BLOCK -->
+					<div class="primary-text"><p>If ROA, for example 14%, exceeds the WACC, e.g. 13%, the firm creates value as operations enable to reward debtholders and shareholders. The excess return generated above the WACC allows to attribute more to shareholders than what they required, which will result in an increase in the share price and hence in capital gains for the shareholders.</p>
+					<p>On the contrary, if the WACC would be 15% with the same ROA of 14%, the firm is not in a position to fully compensate its financiers. As debtholders rank higher than shareholders, they get their full compensation. As a result, the return to shareholders will lower than their cost of equity, and their shares will suffer a decline in value. A second way to express value creation by shareholders is hence:</p></div>
+				</div>
+				<div class="content-block graphic-block aos-init" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="assets/images/screens/module_5/ea120-graphic-text-block-03.jpg" class="graphic">
+				</div>
+				<div class="content-block graphic-block aos-init" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="assets/images/screens/module_5/ea120-graphic-text-block-04.jpg" class="graphic">
+				</div>
+				<div class="content-block callout-block aos-init" data-aos="fade-up">
+				<!-- CALLOUT BLOCK -->
+					<div class="primary-text">
+						<p>Note that both approaches are consistent.<br/>If ROA &gt; WACC, then ROE &gt; Cost of equity.</p>
+					</div>
+					<div class="yellow-angle"></div>
+				</div>
+				<div class="bottom-yellow-angle"></div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<script>		
+	function fade() {
+		var total = 0;
+		$('.content-block').each(function() {				  
+		  var objectBottom = $(this).offset().top + $(this).outerHeight();
+		  var windowBottom = $(window).scrollTop() + $(window).innerHeight();		 
+		  if (objectBottom-120 < windowBottom) {		   
+			if ($(this).css('opacity')==0) {$(this).fadeTo(400,1);$(this).addClass('fadeUp').removeClass('fadeDown');}
+		  } else {
+			if ($(this).css('opacity')==1) {$(this).fadeTo(400,0);$(this).addClass('fadeDown').removeClass('fadeUp');}
+		  }					
+			total += $(this).height();		 		
+		});		
+		if($('.content1').scrollTop() +$('.content1').innerHeight() >= $('.content1')[0].scrollHeight-40) {
+            complete_page();
+			enableNextBtn();
+        }
+	  }	
+	$('.content1').scroll(function() {fade();});
+</script>
+</html>

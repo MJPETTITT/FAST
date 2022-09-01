@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m4c11/style.css">
+	<link rel="stylesheet" href="src/screens/m4c11/Wstyle.css">
+	<script type="text/javascript" src="src/screens/m4c11/script.js"></script>
+	<script type="text/javascript" src="src/screens/m4c11/Wscript.js"></script>
+	<script type="text/javascript" src="js/required/jquery.transform2d.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_4/da110-01.jpg',
+		'assets/images/screens/module_4/logo.png',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1">
+			<div class="question-holder holder">
+				<div class="question_1 standard FirstState">
+					<div class="header-panel panel_1">
+						<h1 class="title-text">LIQUIDITY QUICK QUIZ</h1>
+						<h3 class="question-text">Let's check your understanding of liquidity with a quick quiz.</h3>
+						<div class="directions-text">				
+							<p>Which statement is <i>wrong</i>?</p>
+						</div>
+					</div>
+					<div class="response-holder">
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="number">1</div>
+							<p>In a financially healthy company, the working capital requirement is approximately equal to the available net working capital.</p>
+						</div>
+
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="number">2</div>
+							<p>Retailers have usually a negative working capital requirement.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="number">3</div>
+							<p>In order to reduce the liquidity risk, it is optimal to finance the working capital requirement with either equity or long term liabilities.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="3">
+							<div class="number">4</div>
+							<p>The working capital requirement of an organisation will expand if the days inventory outstanding decreases (everything else being equal).</p>
+						</div>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel correct">
+							<div class="text-content1">
+								<h3 class="title-text">Not Quite</h3>
+								<div class="primary-text">
+									<p>By decreasing the days inventory outstanding, the working capital requirement will decrease.</p>
+								</div>
+								<button data-ui="continue" class="btn-close clickable btn-text">CONTINUE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="question_1 standard FinalState">
+					<div class="header-panel panel_1">
+						<h1 class="title-text">LIQUIDITY QUICK QUIZ</h1>
+						<h3 class="question-text">Given Adecco’s net working capital is much higher than its working capital requirement, Adecco’s liquidity risk is:</h3>
+						<div class="directions-text">				
+							<p></p>
+						</div>
+					</div>
+					<div class="response-holder">
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="number">1</div>
+							<p>Low</p>
+						</div>
+
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="number">2</div>
+							<p>Medium</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="number">3</div>
+							<p>High</p>
+						</div>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel correct">
+							<div class="text-content1">
+								<h3 class="title-text">Not Quite</h3>
+								<div class="primary-text">
+									<p>Adecco’s liquidity risk is low as the net working capital is much higher than the working capital requirement.</p>
+								</div>
+								<button data-ui="final_continue" class="btn-close clickable btn-text">CONTINUE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="question_1 multiselect">
+					<div class="header-holder panel_1">
+						<h1 class="title-text">Liquidity Quick Quiz</h1>
+						<h3 class="question-text">Which of the following minimises a firm’s working capital requirement? (Select all that apply).</h3>
+					</div>
+					<div class="response-holder panel">
+						<div class="directions-text">
+
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="box"></div>
+							<p>Switching to on-line sales, rather than selling through distributors.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="box"></div>
+							<p>Switching to exports to Southern European countries, where payment terms are typically longer.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="box"></div>
+							<p>Increasing sales in a company with a positive WCR, while keeping DSO, DIO and DPO constant.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="3">
+							<div class="box"></div>
+							<p>Negotiating longer payment terms from suppliers.</p>
+						</div>
+						<div class="line-break"></div>
+						<button data-ui="submit" class="btn-text submit clickable">SUBMIT</button>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel correct">
+							<div class="text-content1">
+								<h3 class="title-text">Not Quite</h3>
+								<div class="primary-text">
+									<p>Switching to on-line sales decreases DSO and hence WCR, as customers pay immediately when buying on-line, while distributors pay after they have sold. But longer payment terms from suppliers also lead to lower WCR, thanks to higher DPO.</p>
+								</div>
+								<button data-ui="close" class="btn-close clickable btn-text">CONTINUE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+				<div class='overlayWorkbook' style="display:none">
+					<div class="move-box-holder">
+						<div class="downToggle" data-rot="225"><i class="down"></i></div>
+						<div class="contentStep"></div>
+					</div>
+					<div class="intro-panel statementPop">
+						<div class="text-content aquasailPop ">
+							<h4 class="title-text"></h4>
+							<img src="assets/images/screens/module_4/logo.png" class="logo"/>				
+							<div class="primary-text">
+								<p>The Adecco Group provides HR solutions. It’s probably best known as the world’s leading workforce solutions company, offering temporary staffing, permanent placement and outsourcing across all sectors.</p>
+								<p>Based upon the information provided in it’s balance sheet, estimate Adecco Group’s liquidity risk.</p>
+							</div>         
+							<button data-Id='0' class="btn-text btn-close clickable btn-text">CONTINUE</button>
+						</div>
+					</div>
+					<div class="question workbook cash_statement">
+							
+							<div id="workbook2_Heading" style="">FIRST, CALCULATE ADECCO GROUP’S NWC</div>
+							<div id="workbook2_child0" style=""> 
+								<!-- <h1>TUTORIAL: BALANCE SHEET</h1>  -->
+								<div class="headitems"> 
+									<div class="celldivider"></div> 
+									<span class="item">ASSETS</span> 
+									<span class="item">EQUITY &amp; LIABILITIES</span>  
+								</div> 
+								<div class="subitem1"> 
+									<div class="celldivider" ></div>
+									<span class="item">Fixed Assets</span>
+									<span class="item">
+										<span class="numbers90 static">4714</span>
+									</span> 
+									<span class="item">Shareholders' Equity</span> 
+									<span class="item">
+										<span class="numbers90 static">3990</span>
+									</span> 
+								</div> 
+								<div class="subitem1"> 
+									<div class="celldivider" ></div>
+									<span class="item"><!-- Land, Buildings, Machinery --></span>
+									<span class="item">
+										<!-- <span class="numbers90 static">179</span> -->
+									</span> 
+									<span class="item">Long Term Debt</span> 
+									<span class="item">
+										<span class="numbers90 static">2045</span>
+									</span> 
+								</div>
+								<div class="subitem1"> 
+									<div class="celldivider"></div>
+									<span class="item">Inventory</span> 
+									<span class="item">
+										<span class="numbers90 static">-</span>
+									</span>
+									<span class="item">Short Term Debt</span> 
+									<span class="item">
+										<span class="numbers90 static">370</span>
+									</span>
+								</div>  
+								<div class="subitem1"> 
+									<div class="celldivider"></div>
+									<span class="item">Account Receivable</span> 
+									<span class="item">
+										<span class="numbers90 static">4575</span>
+									</span>
+									<span class="item">Account Payable</span> 
+									<span class="item">
+										<span class="numbers90 static">4322</span>
+									</span>
+								</div> 
+								<div class="subitem1 borderLine"> 
+									<div class="celldivider"></div>
+									<span class="item">Cash</span> 
+									<span class="item">
+										<span class="numbers90 static">1438</span>
+									</span>
+									<span class="item">Other Current Liabilities</span> 
+									<span class="item">
+										<span class="numbers90 static">-</span>
+									</span>
+								</div>   
+								<div class="subitem1"> 
+									<div class="celldivider"></div>
+									<span class="item boldLato">Total assets</span> 
+									<span class="item">
+										<span class="numbers90 static">10727</span>
+									</span>
+									<span class="item boldLato">Total equity &amp; liabilities</span> 
+									<span class="item">
+										<span class="numbers90 static">10727</span>
+									</span>
+								</div>   
+								<div class="subitem2"> 
+									<div class="celldivider"></div>
+									<span class="item boldLato" style='width: 15%'></span> 
+									<span class="item boldLato" style='width: 35%'>Net Working Capital (mio CHF)</span> 
+									<span class="item">
+										<span class="numbers90"><input type="number" class="workbook-input numbers" data-itemindex="0"></span>
+									</span>
+									<span class="item boldLato"></span> 
+								</div> 
+							</div>
+							<button data-ui="submit" class="submit btn-text clickable disabled">SUBMIT</button>
+							<div data-region="feedback" class="feedback-holder"></div>
+					</div>
+					<div class="question workbook question1 balance_statement">
+							
+							<div id="workbook2_Heading" style="">SECOND, COMPARE NWC WITH WCR</div>
+							<div id="workbook2_child0" style=""> 
+								<!-- <h1>TUTORIAL: BALANCE SHEET</h1>  -->
+								<div class="headitems"> 
+									<div class="celldivider"></div> 
+									<span class="item">ASSETS</span> 
+									<span class="item">EQUITY &amp; LIABILITIES</span>  
+								</div> 
+								<div class="subitem1 "> 
+									<div class="celldivider" ></div>
+									<span class="item">Fixed Assets</span>
+									<span class="item">
+										<span class="numbers90 static">4714</span>
+									</span> 
+									<span class="item">Shareholders' Equity</span> 
+									<span class="item">
+										<span class="numbers90 static">3990</span>
+									</span> 
+								</div> 
+								<div class="subitem1"> 
+									<div class="celldivider" ></div>
+									<span class="item"><!-- Land, Buildings, Machinery --></span>
+									<span class="item">
+										<!-- <span class="numbers90 static">179</span> -->
+									</span> 
+									<span class="item">Long Term Debt</span> 
+									<span class="item">
+										<span class="numbers90 static">2045</span>
+									</span> 
+								</div>
+								<div class="subitem1"> 
+									<div class="celldivider"></div>
+									<span class="item">Inventory</span> 
+									<span class="item">
+										<span class="numbers90 static">-</span>
+									</span>
+									<span class="item">Short Term Debt</span> 
+									<span class="item">
+										<span class="numbers90 static">370</span>
+									</span>
+								</div>  
+								<div class="subitem1"> 
+									<div class="celldivider"></div>
+									<span class="item">Account Receivable</span> 
+									<span class="item">
+										<span class="numbers90 static">4575</span>
+									</span>
+									<span class="item">Account Payable</span> 
+									<span class="item">
+										<span class="numbers90 static">4322</span>
+									</span>
+								</div> 
+								<div class="subitem1 borderLine"> 
+									<div class="celldivider"></div>
+									<span class="item">Cash</span> 
+									<span class="item">
+										<span class="numbers90 static">1438</span>
+									</span>
+									<span class="item">Other Current Liabilities</span> 
+									<span class="item">
+										<span class="numbers90 static">-</span>
+									</span>
+								</div>   
+								<div class="subitem1"> 
+									<div class="celldivider"></div>
+									<span class="item boldLato">Total assets</span> 
+									<span class="item">
+										<span class="numbers90 static">10727</span>
+									</span>
+									<span class="item boldLato">Total equity &amp; liabilities</span> 
+									<span class="item">
+										<span class="numbers90 static">10727</span>
+									</span>
+								</div>   
+								<div class="subitem2"> 
+									<div class="celldivider"></div>
+									<span class="item boldLato" style='width: 10%'></span> 
+									<span class="item boldLato" style='width: 40%'>Net Working Capital (mio CHF)</span> 
+									<span class="item">
+										<span class="numbers90 static">1321</span>
+									</span>
+									<span class="item boldLato"></span> 
+								</div>   
+								<div class="subitem2"> 
+									<div class="celldivider"></div>
+									<span class="item boldLato" style='width: 10%'></span> 
+									<span class="item boldLato" style='width: 40%'>Working Capital Requirement (mio CHF)</span> 
+									<span class="item">
+										<span class="numbers90"><input type="number" class="balancesheet-input numbers" data-itemindex="0"></span>
+									</span>
+									<span class="item boldLato"></span> 
+								</div> 
+							</div>
+							<button data-ui="submit" class="submit btn-text clickable disabled">SUBMIT</button>
+							<div data-region="feedback" class="feedback-holder"></div>
+					</div>
+					
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel">
+							<div class="text-content">
+									<h3 class="title-text">Not Quite</h3>
+									<div class="primary-text"><p>Be sure to indicate the move of 1100 in all fields.</p></div>
+									<button data-ui="close" class="btn-close show clickable btn-icon"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	
+</body>
+</html>

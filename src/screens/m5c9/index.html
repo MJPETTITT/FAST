@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m5c9/style.css">
+	<link rel="stylesheet" href="src/screens/m5c9/Wstyle.css">
+	<script type="text/javascript" src="src/screens/m5c9/script.js"></script>
+	<script type="text/javascript" src="src/screens/m5c9/Wscript.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_5/ea080-01.jpg',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1 profitability-table">
+				<div class='overlayWorkbook' style="display:none">
+					<div class="intro-panel statementPop">
+						<div class="text-content aquasailPop ">
+							<h4 class="title-text">CALCULATE ROE</h4>
+							<div class="primary-text">
+								<p>Input the correct figures and calculate the ROE before taxes and ROE after taxes for Year 1. The figures you need are in the <b>balance sheet</b> and P&L. </p>
+							</div>         
+							<button data-Id='0' class="btn-text btn-close clickable btn-text">CONTINUE</button>
+						</div>
+					</div>
+					<div class="question workbook cash_statement">
+							
+							<div id="workbook2_Heading" style="">RETURN ON EQUITY BEFORE TAX</div>
+							<div id="workbook2_child0" style=""> 
+								<div class="workbook-row workbook-row-1 contains-curly-braces">
+									<div class="workbook-body">
+										<div class="workbook-row workbook-row-1 contains-curly-braces">
+											<p class="bold-text">ROE (Before Tax)</p>
+											<div class="arithmetic-symbol color">=</div>
+											<p class="ratio-formula">
+												<span>Profit Before Tax</span>
+												<span class="ratio-divider"></span>
+												<span>Equity</span>
+											</p>
+											<div class="arithmetic-symbol color">=</div>
+											<div class="ratio-formula subitem1">
+												<span class="item"><span class="numbers90"><input type="number" step='100' class="workbook-input numbers" data-itemindex="0"></span></span>
+												<span class="ratio-divider"></span>
+												<span class="item"><span class="numbers90"><input type="number" step='100' class="workbook-input numbers" data-itemindex="0"></span></span>
+											</div>
+										</div>
+										<div class="workbook-row workbook-row-divider divider-1 contains-curly-braces">
+											<p class="text-small">OR</p>
+										</div>
+										<div class="workbook-row workbook-row-2 contains-curly-braces">
+											<p>ROA + Financial Leverage</p>
+											<div class="arithmetic-symbol color">=</div>
+											<div class="cell-align-row subitem1">
+												<span class="item"><span class="numbers90 static">7.38</span></span>
+												<span class="arithmetic-symbol">%</span>
+											</div>
+											<div class="arithmetic-symbol color">+</div>
+											<div class="cell-align-row subitem1">
+												<span class="item"><span class="numbers90 static">-3.88</span></span>
+												<span class="arithmetic-symbol">%</span>
+											</div>
+										</div>
+										
+										<div class="workbook-footer bold-text">
+											<h3>ROE before tax</h3>
+											<div class="cell-align-row subitem1">
+												<span class="item"><span class="numbers90 autoFill"></span></span>
+												<span>%</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button data-ui="submit" class="submit btn-text clickable disabled">SUBMIT</button>
+							<div data-region="feedback" class="feedback-holder"></div>
+					</div>
+
+					<div class="question workbook question1 balance_statement">
+							
+							<div id="workbook2_Heading" style="">RETURN ON EQUITY BEFORE TAX</div>
+							<div id="workbook2_child0" style=""> 
+							
+							<div class="workbook-row workbook-row-2 contains-curly-braces">
+								<div class="workbook-body">
+									<div class="workbook-row workbook-row-1 contains-curly-braces">
+										<p class="bold-text">ROE (After Tax)</p>
+										<div class="arithmetic-symbol color">=</div>
+										<p class="ratio-formula">
+											<span>Profit After Tax</span>
+											<span class="ratio-divider"></span>
+											<span>Equity</span>
+										</p>
+										<div class="arithmetic-symbol color">=</div>
+										<div class="ratio-formula subitem1">
+											<span class="item"><span class="numbers90"><input type="number" step='100' class="balancesheet-input numbers" data-itemindex="0"></span></span>
+											<span class="ratio-divider"></span>
+											<span class="item"><span class="numbers90"><input type="number" step='100' class="balancesheet-input numbers" data-itemindex="0"></span></span>
+										</div>
+									</div>									
+									<div class="workbook-footer bold-text">
+										<h3>ROE after tax</h3>
+										<div class="cell-align-row subitem1">
+											<span class="item"><span class="numbers90 autoFill"></span></span>
+											<span>%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<button data-ui="submit" class="submit btn-text clickable disabled">SUBMIT</button>
+							<div data-region="feedback" class="feedback-holder"></div>
+							</div>
+					</div>
+					
+					
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel">
+							<div class="text-content">
+									<h3 class="title-text">Not Quite</h3>
+									<div class="primary-text"><p>Be sure to indicate the move of 1100 in all fields.</p></div>
+									<button data-ui="close" class="btn-close show clickable btn-icon"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m4c10/style.css">
+	<script type="text/javascript" src="src/screens/m4c10/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+
+
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_4/da100-header-block.jpg',
+		'assets/images/screens/module_4/da100-graphic-text-block-01.jpg',	
+		'assets/images/screens/module_4/da100-graphic-text-block-02.jpg'
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.content-block').css('opacity','0');
+			$('.activityContainer').fadeIn(200, function(){
+				fade();
+			});			  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer scrolling" style="display:none">
+		<div class="content1">
+			<div class="content-blocks-holder">
+				<div class=" header-block aos-init aos-animate" data-aos="fade-up">
+				<!--  HEADER BLOCK --> 
+					<div class="header-holder">
+						<h1 class="title-text">Liquidity Ratios</h1>
+						<div class="primary-text"></div> 
+					</div>
+					<div style="background-image: url('assets/images/screens/module_4/da100-header-block.jpg')" class="header-background-graphic background-graphic graphic"></div>
+				</div>
+				<div class="content-block short-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- SHORT TEXT BLOCK -->
+					<div class="primary-text"><span class="large-text">Scroll down to view all the information.</span> </div>
+				</div>
+				<div class="content-block subheader-block aos-init aos-animate" data-aos="fade-up">
+				<!-- SUB HEAD BLOCK -->
+					<h3 class="title-text">Three commonly used ratios to analyse a company’s WCR</h3>
+				</div>
+				<div class="content-block graphic-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- GRAPHIC TEXT BLOCK -->
+					<div class="text-holder aos-init aos-animate" data-aos="fade-right">
+						<h3 class="title-text"></h3>
+						<div class="primary-text"><p>From the company’s operating cycle, three commonly used liquidity ratios can be derived:</p>
+							<ul>
+								<li><b>Days Sales Outstanding</b> shows how many days it takes the firm to collect accounts receivable.</li>
+								<li><b>Days Inventory Outstanding</b> reports the number of days goods spend in the company’s inventory.</li>
+								<li><b>Days Payables Outstanding</b> shows how long the firm waits before paying for supplied goods and services.</li>
+							</ul>
+						</div>
+					</div>
+					<img src="assets/images/screens/module_4/da100-graphic-text-block-01.jpg" class="graphic aos-init aos-animate" data-aos="fade-left">
+				</div>
+				<div class="content-block long-text-block aos-init" data-aos="fade-up">
+				<!-- LONG TEXT  BLOCK -->
+					<div class="primary-text">
+						<p>They are closely linked to a company’s operations and business model, and together determine the working capital requirement. For example, a service company will have a very low Days Inventory Outstanding. Retailers usually have low Days Sales Outstanding and high Days Payables Outstanding. This is because their customers normally pay cash, whereas retailers receive credit from suppliers (as we saw in the Carrefour example).</p>
+					</div>
+				</div>
+				<div class="content-block subheader-block aos-init" data-aos="fade-up">
+				<!-- SUB HEAD BLOCK -->
+					<h3 class="title-text">Days Working Capital (DWC)</h3>
+				</div>
+				<div class="content-block graphic-text-block aos-init" data-aos="fade-up">
+				<!-- GRAPHIC TEXT BLOCK -->
+					<div class="text-holder aos-init" data-aos="fade-right">
+						<h3 class="title-text"></h3>
+						<div class="primary-text"><p>The following formula gives a rough estimate of the number of days a company has to finance its operating cycle, also referred to as Days Working Capital (DWC):</p></div>
+					</div>
+					<img src="assets/images/screens/module_4/da100-graphic-text-block-02.jpg" class="graphic aos-init" data-aos="fade-left">
+				</div>
+				<div class="content-block long-text-block aos-init" data-aos="fade-up">
+				<!-- LONG TEXT  BLOCK -->
+					<div class="primary-text">
+						<p>This concept closely relates to the working capital requirement. The higher it is, the bigger the working capital requirement and the more financing the company needs to support its operations.</p>
+						<p>While liquidity is quite often measured using the current ratio or acid test, it is preferable to carefully scrutinise its working capital management. Generally speaking, a healthy liquidity situation implies that a company has sufficient net working capital to cover its working capital requirement.</p>
+					</div>
+				</div>
+				<div class="bottom-yellow-angle"></div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<script>		
+	function fade() {
+		var total = 0;
+		$('.content-block').each(function() {				  
+		  var objectBottom = $(this).offset().top + $(this).outerHeight();
+		  var windowBottom = $(window).scrollTop() + $(window).innerHeight();		 
+		  if (objectBottom-120 < windowBottom) {		   
+			if ($(this).css('opacity')==0) {$(this).fadeTo(400,1);$(this).addClass('fadeUp').removeClass('fadeDown');}
+		  } else {
+			if ($(this).css('opacity')==1) {$(this).fadeTo(400,0);$(this).addClass('fadeDown').removeClass('fadeUp');}
+		  }				
+			total += $(this).height();		 		
+		});		
+		if($('.content1').scrollTop() +$('.content1').innerHeight() >= $('.content1')[0].scrollHeight-40) {
+            complete_page();
+			enableNextBtn();
+        }
+	  }	
+	$('.content1').scroll(function() {fade();});
+</script>
+</html>

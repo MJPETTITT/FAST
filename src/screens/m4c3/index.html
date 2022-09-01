@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m4c3/style.css">
+	<script type="text/javascript" src="src/screens/m4c3/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_4/da030-01.jpg',
+		'assets/images/workbook-overlay-graphic.svg'
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1 profitability-table">
+				<div class='overlayWorkbook' >
+					<div class="intro-panel statementPop">
+						<div class="text-content aquasailPop ">
+							<h4 class="title-text">CURRENT RATIO AND ACID TEST</h4>
+							<div class="primary-text">
+								<p>Using the two ratios formulae, input the correct figures and calculate the current ratio and the acid test for Year 1. The figures you need are in the <b>balance sheet</b> (found in the workbook overlay). You only need to fill in the correct inputs in the bold boxes. The ratios will be automatically calculated.</p>
+							</div>         
+							<button data-Id='0' class="btn-text btn-close clickable btn-text">CONTINUE</button>
+						</div>
+					</div>
+					
+					<div class="question workbook cash_statement">
+							
+							<div id="workbook2_Heading" style="">CURRENT RATIO AND ACID TEST</div>
+							<div id="workbook2_child0" style=""> 
+								<!-- <h1>TUTORIAL: BALANCE SHEET</h1>  -->
+								<div class="headitems"> 
+									<div class="celldivider"></div> 
+									<span class="item"></span> 
+									<span class="item">Y1</span> 
+								</div> 
+								<div class="subitem1"> 
+									<span class="item">
+										<span class='lhs boldLato'>Current Ratio = </span>
+										<span class='rhs'>
+											<span>Current Assets</span>
+											<span class="ratio-divider"></span>
+											<span>Current Liabilities</span>
+										</span>
+									</span>
+									<span class="item">
+										<span class='lhs '>
+											<span class='numbers90'><input type="number" step="100" class="workbook-input numbers" data-itemindex="0"></span>
+											<span class="ratio-divider"></span>
+											<span class='numbers90'><input type="number" step="100" class="workbook-input numbers" data-itemindex="1"></span>
+										</span>
+										<span class='rhs'>
+											<span class='eql'> = </span>
+											<span class="numbers90 autoFill" data-itemindex="1"></span>
+										</span>
+									</span> 
+								</div>
+								<div class="subitem1"> 
+									<span class="item">
+										<span class='lhs boldLato'>Acid Test = </span>
+										<span class='rhs'>
+											<span>Accounts Receivable + Cash</span>
+											<span class="ratio-divider"></span>
+											<span>Current Liabilities</span>
+										</span>
+									</span>
+									<span class="item">
+										<span class='lhs '>
+											<span class='numbers90'><input type="number" step="100" class="workbook-input numbers" data-itemindex="2"></span>
+											<span class="ratio-divider"></span>
+											<span class='numbers90'><input type="number" step="100" class="workbook-input numbers" data-itemindex="3"></span>
+										</span>
+										<span class='rhs'>
+											<span class='eql'> = </span>
+											<span class="numbers90 autoFill" data-itemindex="1"></span>
+										</span>
+									</span> 
+								</div>
+							</div>
+							<button data-ui="submit" class="submit btn-text clickable disabled">SUBMIT</button>
+							<div data-region="feedback" class="feedback-holder"></div>
+					</div>
+					
+					
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel">
+							<div class="text-content">
+									<h3 class="title-text">Not Quite</h3>
+									<div class="primary-text"><p>Be sure to indicate the move of 1100 in all fields.</p></div>
+									<button data-ui="close" class="btn-close show clickable btn-icon"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	
+</body>
+</html>

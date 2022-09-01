@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m5c7/style.css">
+	<script type="text/javascript" src="src/screens/m5c7/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+
+
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_5/ea070-header-block.jpg',
+		'assets/images/screens/module_5/ea070-graphic-text-block-01.jpg',	
+		'assets/images/screens/module_5/ea070-graphic-text-block-02.jpg',	
+		'assets/images/screens/module_5/ea070-graphic-text-block-03.jpg',	
+		'assets/images/screens/module_5/ea070-graphic-block-01.jpg',
+		'assets/images/screens/module_5/ea070-graphic-block-02.jpg',
+		'assets/images/screens/module_5/ea070-graphic-block-03.jpg',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.content-block').css('opacity','0');
+			$('.activityContainer').fadeIn(200, function(){
+				fade();
+			});				  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer scrolling" style="display:none">
+		<div class="content1">
+			<div class="content-blocks-holder">
+				<div class=" header-block aos-init aos-animate" data-aos="fade-up">
+				<!--  HEADER BLOCK --> 
+					<div class="header-holder">
+						<h1 class="title-text">Financial Leverage Effect</h1>
+						<div class="primary-text">
+							<p>Let's illustrate the financial leverage effect with an example.</p>
+						</div> 
+					</div>
+					<div style="background-image: url('assets/images/screens/module_5/ea070-header-block.jpg')" class="header-background-graphic background-graphic graphic"></div>
+				</div>
+				<div class="content-block short-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- SHORT TEXT BLOCK -->
+					<div class="primary-text">
+						<span class="large-text">Scroll down to view all the information.</span>
+					</div>
+				</div>
+				<div class="content-block subheader-block aos-init aos-animate" data-aos="fade-up">
+				<!-- SUB HEAD BLOCK -->
+					<h3 class="title-text">Company A</h3>
+				</div>
+				<div class="content-block graphic-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- GRAPHIC TEXT BLOCK -->
+					<div class="text-holder aos-init aos-animate" data-aos="fade-right">
+						<h3 class="title-text"></h3>
+						<div class="primary-text">
+							<p>Company A has assets of 100 million EUR and is fully equity funded:</p>
+						</div>
+					</div>
+					<img src="assets/images/screens/module_5/ea070-graphic-text-block-01.jpg" class="graphic aos-init aos-animate" data-aos="fade-left">
+				</div>
+				<div class="content-block graphic-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- GRAPHIC TEXT BLOCK -->
+					<div class="text-holder aos-init aos-animate" data-aos="fade-right">
+						<h3 class="title-text"></h3>
+						<div class="primary-text">
+							<p>It is straightforward to calculate ROA, with<br/> operating profit = €10 million</p>
+						</div>
+					</div>
+					<img src="assets/images/screens/module_5/ea070-graphic-text-block-02.jpg" class="graphic aos-init aos-animate" data-aos="fade-left">
+				</div>
+				<div class="content-block graphic-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- GRAPHIC TEXT BLOCK -->
+					<div class="text-holder aos-init aos-animate" data-aos="fade-right">
+						<h3 class="title-text"></h3>
+						<div class="primary-text">
+							<p>ROE is also 10%, as net profits equal operating profit, and equity equals assets. As there are no liabilities, the financial leverage effect is zero, i.e. ROE = ROA.</p>
+						</div>
+					</div>
+					<img src="assets/images/screens/module_5/ea070-graphic-text-block-03.jpg" class="graphic aos-init aos-animate" data-aos="fade-left">
+				</div>
+				<div class="content-block subheader-block aos-init aos-animate" data-aos="fade-up">
+				<!-- SUB HEAD BLOCK -->
+					<h3 class="title-text">Company B</h3>
+				</div>
+				<div class="content-block long-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- LONG TEXT  BLOCK -->
+					<div class="primary-text"><p>Now consider Company B, which is identical to A except that is has 50 million EUR of equity and a similar amount in <b>bank debt</b> with an interest rate of 5%. As Company B is identical to A, B’s operating profit also equals 10 million Euro.</p></div>
+				</div>
+				<div class="content-block graphic-block aos-init aos-animate" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="assets/images/screens/module_5/ea070-graphic-block-01.jpg" class="graphic">
+				</div>
+				<div class="content-block callout-block aos-init aos-animate" data-aos="fade-up">
+				<!-- CALLOUT BLOCK -->
+					<div class="primary-text">
+						<p>Profit for the shareholders now amounts to 7.5 million EUR = 10 million EUR operating profit – 2.5 million interest paid (= 5% x 50 million EUR <b>bank debt</b>). While ROA is still 10%, ROE is now 15%.</p>
+					</div>
+					<div class="yellow-angle"></div>
+				</div>
+				<div class="content-block graphic-block aos-init aos-animate" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="assets/images/screens/module_5/ea070-graphic-block-02.jpg" class="graphic">
+				</div>
+				<div class="content-block graphic-block aos-init aos-animate" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="" class="graphic">
+				</div>
+				<div class="content-block long-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- LONG TEXT  BLOCK -->
+					<div class="primary-text">
+						<p>For Company B, ROE exceeds ROA as the firm has financed half of its assets with debt that costs 5%, while it obtains an operating profit that is bigger than the cost of debt. Shareholders benefit from this excess return.</p>
+					</div>
+				</div>
+				<div class="content-block subheader-block aos-init aos-animate" data-aos="fade-up">
+				<!-- SUB HEAD BLOCK -->
+					<h3 class="title-text">Summary</h3>
+				</div>
+				<div class="content-block long-text-block aos-init aos-animate" data-aos="fade-up">
+				<!-- LONG TEXT  BLOCK -->
+					<div class="primary-text">
+						<p>Putting it all together, ROE is determined by ROA and the financial leverage effect.</p>
+						<p>ROA, in turn, is determined by (1) margin and (2) asset turnover.</p>
+						<p>Finally, the financial leverage effect is determined by (1) the difference between ROA and the cost of liabilities, and (2) the proportion of liabilities to equity. It is clear that a good ROA is essential to achieve a high ROE!</p>
+					</div>
+				</div>
+				<div class="content-block graphic-block aos-init aos-animate" data-aos="fade-up">
+				<!-- GRAPHIC BLOCK -->
+					<img src="assets/images/screens/module_5/ea070-graphic-block-03.jpg" class="graphic">
+				</div>
+				<div class="bottom-yellow-angle"></div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<script>		
+	function fade() {
+		var total = 0;
+		$('.content-block').each(function() {				  
+		  var objectBottom = $(this).offset().top + $(this).outerHeight();
+		  var windowBottom = $(window).scrollTop() + $(window).innerHeight();		 
+		  if (objectBottom-120 < windowBottom) {		   
+			if ($(this).css('opacity')==0) {$(this).fadeTo(400,1);$(this).addClass('fadeUp').removeClass('fadeDown');}
+		  } else {
+			if ($(this).css('opacity')==1) {$(this).fadeTo(400,0);$(this).addClass('fadeDown').removeClass('fadeUp');}
+		  }					
+			total += $(this).height();		 		
+		});		
+		if($('.content1').scrollTop() +$('.content1').innerHeight() >= $('.content1')[0].scrollHeight-40) {
+            complete_page();
+			enableNextBtn();
+        }
+	  }	
+	$('.content1').scroll(function() {fade();});
+</script>
+</html>

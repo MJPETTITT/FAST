@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m5c5/style.css">
+	<!-- <link rel="stylesheet" href="src/screens/m4c11/Wstyle.css"> -->
+	<script type="text/javascript" src="src/screens/m5c5/script.js"></script>
+	<!-- <script type="text/javascript" src="src/screens/m4c11/Wscript.js"></script> -->
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_5/ea050-01.jpg',
+		'assets/images/screens/module_5/ea050-02.png',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+		<div class="content1">
+			<div class="question-holder holder multiselection">
+				<div class="question_1 standard FirstState">
+					<div class="header-panel panel_1">
+						<h1 class="title-text">PROFITABILITY: QUICK QUIZ</h1>
+						<h3 class="question-text">Firm A and B have the same level of sales and the same EBIT, but A used twice as much assets as B. How do the return on assets of A and B compare?</h3>
+						<div class="directions-text">				
+							<p></p>
+						</div>
+					</div>
+					<div class="response-holder">
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="number">1</div>
+							<p>The ROA of A is half the ROA of B.</p>
+						</div>
+
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="number">2</div>
+							<p>The ROA of A is double the ROA of B.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="number">3</div>
+							<p>A has the same ROA as B.</p>
+						</div>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel correct">
+							<div class="text-content1">
+								<h3 class="title-text">Not Quite</h3>
+								<div class="primary-text">
+									<p>The ROA of A is half the ROA of B, as ROA is calculated as EBIT / Assets.</p>
+									<p>While the margin of A and B will be equal, the asset turnover of A will only be half the asset turnover of B. Both together determine the ROA.</p>
+								</div>
+								<button data-ui="continue1" class="btn-close clickable btn-text">CONTINUE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="question_1 standard SecondState">
+					<div class="header-panel panel_1">
+						<h1 class="title-text">PROFITABILITY: QUICK QUIZ</h1>
+						<h3 class="question-text">SuperCycle S.A. has an 8 percent return on total assets of €300,000 and a profit margin of 5 percent. What are its sales?</h3>
+						<div class="directions-text">				
+							<p></p>
+						</div>
+					</div>
+					<div class="response-holder">
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="number">1</div>
+							<p>€1,500,000</p>
+						</div>
+
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="number">2</div>
+							<p>€3,750,000</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="number">3</div>
+							<p>€480,000</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="3">
+							<div class="number">4</div>
+							<p>€300,000</p>
+						</div>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel has-graphic">
+							<div class="text-content1">
+								<h3 class="title-text">Not Quite</h3>
+								<div class='wrap_text'>
+									<div class="primary-text">
+										<p>Sales are €480,000:</p>
+									</div>
+									<div class="graphic-holder">
+										<img src="assets/images/screens/module_5/ea050-02.png">
+									</div>
+									<button data-ui="continue2" class="btn-close clickable btn-text">CONTINUE</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="question_1 standard FinalState">
+					<div class="header-panel panel_1">
+						<h1 class="title-text">PROFITABILITY: QUICK QUIZ</h1>
+						<h3 class="question-text">Which type of company will have the highest asset turnover?</h3>
+						<div class="directions-text">				
+							<p></p>
+						</div>
+					</div>
+					<div class="response-holder">
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="number">1</div>
+							<p>A retail company.</p>
+						</div>
+
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="number">2</div>
+							<p>A steel production company.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="number">3</div>
+							<p>A leasing company, which leases its assets on a long term basis to its customers.</p>
+						</div>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel">
+							<div class="text-content1">
+								<h3 class="title-text">Not Quite</h3>
+								<div class="primary-text">
+									<p>A retail company has the highest asset turnover, as it needs less assets to operate its business compared to the production or leasing companies, which are asset heavy companies.</p>
+								</div>
+								<button data-ui="final_continue" class="btn-close clickable btn-text">CONTINUE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="question_1 multiselect">
+					<div class="header-holder panel_1">
+						<h1 class="title-text">PROFITABILITY: QUICK QUIZ</h1>
+						<h3 class="question-text">Let's check your understanding of profitability with a quick quiz.</h3>
+					</div>
+					<div class="response-holder panel">
+						<div class="directions-text">
+							What actions can a firm take to increase its margin? Select all that apply.
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="box"></div>
+							<p>Increase the sales price.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="box"></div>
+							<p>Negotiate longer payment terms with its suppliers.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="box"></div>
+							<p>Decrease the Bill of Materials, i.e. the cost of the materials needed to make its products.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="3">
+							<div class="box"></div>
+							<p>Finance a part of its assets with debt rather than equity.</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="4">
+							<div class="box"></div>
+							<p>Reduce its inventory.</p>
+						</div>
+						<div class="line-break"></div>
+						<button data-ui="submit" class="btn-text submit clickable">SUBMIT</button>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel correct">
+							<div class="text-content1">
+								<h3 class="title-text">Not Quite</h3>
+								<div class="primary-text">
+									<p>A firm’s sales price and its bill of materials directly affect the margins. The former leads to higher revenues, the latter to lower costs.</p>
+									<p>Negotiating longer payment terms and reducing inventory both improve the liquidity position, but not the margin. Finally, the financing policy does not impact a firm’s margin, which is solely driven by its operations.</p>
+								</div>
+								<button data-ui="close" class="btn-close clickable btn-text">CONTINUE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+</body>
+</html>

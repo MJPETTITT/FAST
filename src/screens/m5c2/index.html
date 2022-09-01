@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m5c2/style.css">
+	<script type="text/javascript" src="src/screens/m5c2/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_5/ea020-01.jpg',
+		'assets/images/screens/module_5/ea020-02.png',	
+		'assets/images/screens/module_5/ea020-03.png',	
+		'assets/images/screens/module_5/ea020-04.png',	
+		'assets/images/screens/module_5/ea020-05.png',	
+		'assets/images/screens/module_5/ea020-06.png',	
+		'assets/images/screens/module_5/ea020-07.png',	
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer color" data-key="enter" data-active='0' style="display:none" data-active="1">
+		<div class="montage-nav">
+			<div data-ui="arrowLeft" data-arrow="left" class="arrow prev-arrow clickable disabled">
+				<svg xmlns="http://www.w3.org/2000/svg" width="29.1" height="19.6">
+				  <path d="M13.5.4L1 11.7c-.6.6-1 1.4-1 2.3v4.9c0 .8.5 1 1 .5L13.5 8.7c.6-.5 1.5-.5 2.1 0l12.5 10.7c.6.5 1 .3 1-.5V14c-.1-.9-.4-1.7-1-2.3L15.6.4c-.6-.5-1.5-.5-2.1 0z" fill="#fff"></path>
+				</svg>
+			</div>
+			<div class="dots">
+				<span data-ui="dots" class="dot active" data-index="0">1</span>                 
+                <span data-ui="dots" class="dot" data-index="1">2</span>
+				<span data-ui="dots" class="dot" data-index="2">3</span>
+				<span data-ui="dots" class="dot" data-index="3">4</span>
+				<span data-ui="dots" class="dot" data-index="4">5</span>
+				<span data-ui="dots" class="dot" data-index="5">6</span>
+
+            </div>
+            <div data-ui="arrowRight" data-arrow="right" class="arrow next-arrow clickable">
+				<svg xmlns="http://www.w3.org/2000/svg" width="29.1" height="19.6">
+                  <path d="M15.6 19.2L28.1 7.9c.6-.6 1-1.4 1-2.3V.7c0-.8-.5-1-1-.5L15.6 10.9c-.6.5-1.5.5-2.1 0L1 .3C.5-.2 0 0 0 .7v4.8c.1.9.4 1.7 1 2.3l12.5 11.3c.6.6 1.5.6 2.1.1z" fill="#fff"></path>
+				</svg>
+            </div>
+        </div>
+		<div data-ui="stepInner" class="step-holder-inner" >
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step active" data-index="0" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">EQUITY & LIABILITIES</h3>
+								<div class="inner-text">
+									<p>First, a company raises equity and debt on the right-hand side of the <b>balance sheet</b> to finance assets.</p>
+								</div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_5/ea020-02.png" class="montage-graphic">
+					</div>
+                </div>
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step next" data-index="1" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								 OPERATIONS
+								</h3>
+								  <div class="inner-text">
+									<p>These assets are put to work for the company’s operations.</p>
+								  </div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_5/ea020-03.png" class="montage-graphic">
+					</div>
+                </div>                
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step" data-index="2" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								OPERATING PROFITS
+								</h3>
+								<div class="inner-text">
+									<p>These assets will hopefully lead to operating profits (EBIT).</p>
+								</div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_5/ea020-04.png" class="montage-graphic">
+					</div>
+                </div>
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step" data-index="3" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								  DEBT HOLDERS
+								</h3>
+								  <div class="inner-text">
+									<p>First, part of operating profits is allocated to debt holders as interest payments.</p>
+								  </div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_5/ea020-05.png" class="montage-graphic">
+					</div>
+                </div>
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step" data-index="4" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								 SHAREHOLDERS
+								</h3>
+								  <div class="inner-text">
+									<p>After interests and taxes have been settled, shareholders are entitled to any remaining net profits.</p>
+								  </div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_5/ea020-06.png" class="montage-graphic">
+					</div>
+                </div>
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step" data-index="5" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								  RETURN ON ASSETS
+								</h3>
+								  <div class="inner-text">
+									<p>The Return on Assets therefore compares a firm’s operating profit, or its EBIT, with the total amount of assets needed to generate the EBIT, as a measure of its overall operational profitability.</p>
+									<p>Note that the ROA is not impacted by how the assets are financed. It is therefore purely driven by a firm’s operations, and can be compared to that of a competitor, even if that competitor has a different financing structure.</p>
+								  </div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_5/ea020-07.png" class="montage-graphic">
+					</div>
+                </div>
+         </div>
+	</div>
+	
+</body>
+</html>

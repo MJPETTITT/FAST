@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m4c2/style.css">
+	<script type="text/javascript" src="src/screens/m4c2/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_4/da020-01.jpg',
+		'assets/images/screens/module_4/da020-02.png',	
+		'assets/images/screens/module_4/da020-03.png',	
+		'assets/images/screens/module_4/da020-04.png',	
+		'assets/images/screens/module_4/da020-05.png'	
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer color" data-key="enter" data-active='0' style="display:none" data-active="1">
+		<div class="montage-nav">
+			<div data-ui="arrowLeft" data-arrow="left" class="arrow prev-arrow clickable disabled">
+				<svg xmlns="http://www.w3.org/2000/svg" width="29.1" height="19.6">
+				  <path d="M13.5.4L1 11.7c-.6.6-1 1.4-1 2.3v4.9c0 .8.5 1 1 .5L13.5 8.7c.6-.5 1.5-.5 2.1 0l12.5 10.7c.6.5 1 .3 1-.5V14c-.1-.9-.4-1.7-1-2.3L15.6.4c-.6-.5-1.5-.5-2.1 0z" fill="#fff"></path>
+				</svg>
+			</div>
+			<div class="dots">
+				<span data-ui="dots" class="dot active" data-index="0">1</span>                 
+                <span data-ui="dots" class="dot" data-index="1">2</span>
+				<span data-ui="dots" class="dot" data-index="2">3</span>
+				<span data-ui="dots" class="dot" data-index="3">4</span>
+
+            </div>
+            <div data-ui="arrowRight" data-arrow="right" class="arrow next-arrow clickable">
+				<svg xmlns="http://www.w3.org/2000/svg" width="29.1" height="19.6">
+                  <path d="M15.6 19.2L28.1 7.9c.6-.6 1-1.4 1-2.3V.7c0-.8-.5-1-1-.5L15.6 10.9c-.6.5-1.5.5-2.1 0L1 .3C.5-.2 0 0 0 .7v4.8c.1.9.4 1.7 1 2.3l12.5 11.3c.6.6 1.5.6 2.1.1z" fill="#fff"></path>
+				</svg>
+            </div>
+        </div>
+		<div data-ui="stepInner" class="step-holder-inner" >
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step active" data-index="0" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">LIQUIDITY ANALYSIS</h3>
+								<div class="inner-text">
+									<p>The goal of a liquidity analysis is to understand whether a company runs the risk of not being able to pay its bills any more in the short run. A widely used way to understand this question, is to analyse the end-of-year <b>balance sheet</b>. It is called the static view, as it essentially shows the situation on December 31.</p>
+									<p>This is mostly done via ratios or the comparison of different financial items. More specifically, the <b>balance sheet</b> shows the bills to be paid within the year as current liabilities, while the current assets show the cash available or collected within the year.</p>
+									<p><i>Use the down arrow on the left to find out more.</i></p>
+								</div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_4/da020-02.png" class="montage-graphic">
+					</div>
+                </div>
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step next" data-index="1" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								  THE CURRENT RATIO
+								</h3>
+								  <div class="inner-text">
+									<p>A first ratio, the current ratio, therefore compares the current assets with the current liabilities. The idea is that, if the current ratio is bigger than 1, then the liquidity risk is limited. Indeed, the current assets show how much cash can be obtained in the short run, which can then be used to meet all short-term commitments, represented by current liabilities. Generally, current assets consists of cash, inventory and accounts receivables. </p>
+								  </div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_4/da020-03.png" class="montage-graphic">
+					</div>
+                </div>                
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step" data-index="2" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								 THE ACID TEST
+								</h3>
+								<div class="inner-text">
+									<p>The current ratio assumes that all current assets can be relatively quickly converted into cash in order to repay current liabilities. This may not always be completely correct. Some components of current assets might be more difficult to convert into cash. For example, occasionally inventories can no longer be sold due to obsolescence. Think, for example, of outdated smartphones or tablets.</p>
+									<p>To reflect this, a second ratio is composed, the acid test or quick ratio.</p>
+									<p>The acid test leaves inventory out of current assets. Hence, the acid test takes a very pessimistic view, as it assumes that none of the inventory could be converted into cash. This might be especially relevant in industries with long inventory turnover cycles.</p>
+								</div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_4/da020-04.png" class="montage-graphic">
+					</div>
+                </div>
+                <!-- callout node type HTML -->
+                  <!-- single node type HTML -->
+                <div data-ui="steps" class="step" data-index="3" data-type="single">
+					<div class="montage-text-cont">
+						<div class="montage-text-holder">
+							<div class="montage-text">
+								<h3 class="montage-title">
+								  WHAT IS AN ADEQUATE LIQUIDITY POSITION?
+								</h3>
+								  <div class="inner-text">
+									<p>Common sense would suggest that for an adequate liquidity position the current ratio should be higher than 1. This, however, is not fully correct. The need for liquidity depends on the company’s operational strategy, which we will explain more fully when discussing a company’s working capital.</p>
+									<p>Current ratio and acid test can be compared over the years, to understand whether the financial risk has increased (if these ratios have decreased), or with competitors, to understand how the company’s short term financial risk compares to that of competitors. Aiming for a too high liquidity ratio is not optimal, however, as some companies may have ‘too much’ liquidity.</p>
+								  </div>
+							</div>
+						</div>
+						<img src="assets/images/screens/module_4/da020-05.png" class="montage-graphic">
+					</div>
+                </div>
+         </div>
+	</div>
+	
+</body>
+</html>

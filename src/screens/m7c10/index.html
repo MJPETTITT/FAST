@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m7c10/style.css">
+	<link rel="stylesheet" href="src/screens/m7c10/Wstyle.css">
+	<script type="text/javascript" src="src/screens/m7c10/script.js"></script>
+	<script type="text/javascript" src="src/screens/m7c10/Wscript.js"></script>
+	<script type="text/javascript" src="js/required/jquery.transform2d.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_5/ea120-01.jpg',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer explore" style="display:none">
+			<div class="move-box-holder">
+				<div class="downToggle" data-rot="225"><i class="down"></i></div>
+				<div class="contentStep"></div>
+			</div>
+		<div class="content1">
+			<div class="question-holder holder multiselection">
+				<div class="question_1 standard FinalState">
+					<div class="header-panel panel_1">
+						<h1 class="title-text">SOLVENCY QUICK QUIZ</h1>
+						<h3 class="question-text">How do you assess Danone’s solvency risk? It is…</h3>
+						<div class="directions-text">				
+							<p></p>
+						</div>
+					</div>
+					<div class="response-holder">
+						<div data-ui="responses" class="response clickable" data-index="0">
+							<div class="number">1</div>
+							<p>Very low</p>
+						</div>
+
+						<div data-ui="responses" class="response clickable" data-index="1">
+							<div class="number">2</div>
+							<p>Adequate</p>
+						</div>
+						<div data-ui="responses" class="response clickable" data-index="2">
+							<div class="number">3</div>
+							<p>Very high</p>
+						</div>
+					</div>
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel correct">
+							<div class="text-content1">
+								<h3 class="title-text">Not Quite</h3>
+								<div class="primary-text">
+									<p>Danone's solvency risk is very high, as the coverage ratios are low. Its current cash flows allow to repay only 10% of its financial debt. Alternatively, it will take Danone 10 years to repay its financial debt, if the cash flows remain at the same level and all cash is used to repay debt.</p>
+									<p>Furthermore, the cash flow is just sufficient to repay the current part of the long term debt. A small drop in cash flow will jeopardise Danone’s debt repayment capacity.</p>
+								</div>
+								<button data-ui="final_continue" class="btn-close clickable btn-text">CONTINUE</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+				<div class='overlayWorkbook' style="display:none">
+					<div class="intro-panel statementPop">
+						<div class="text-content aquasailPop ">
+							<h4 class="title-text">ASSESSING AQUASAIL’S SOLVENCY OR LONG TERM FINANCIAL RISK</h4>
+							<div class="primary-text">
+								<p>In Year 1, Aquasail’s solvency risk was very high. It’s operational cash flow was not sufficient to cover its debt obligations. Thanks to a highly improved cash flow, Aquasail’s solvency risk dropped strongly in Year 2. With the current level of cash flow, its bank debt can be repaid in approximately 3 years, and its current bank debt can be repaid from its operational cash flows. However, the current financial debt coverage is only slightly above 1. Hence, while improved, the long term financial risk remains rather high. A further improvement of profitability and cash flow generation is hence warranted for a healthy financial outlook.</p>
+							<div class="question intro workbook">
+									<div class="subitem1 "> 
+										<span class="item" style='width:70%'></span>
+										<span class="item">Year 1</span> 
+										<span class="item">Year 2</span> 
+									</div> 
+									<div class="subitem1 "> 
+										<span class="item" style='width:70%'>Financial debt coverage</span>
+										<span class="item">9%</span> 
+										<span class="item">34%</span> 
+									</div> 
+									<div class="subitem1"> 
+										<span class="item" style='width:70%'>Short term financial debt coverage</span> 
+										<span class="item">0.63</span>
+										<span class="item">1.03</span>
+									</div> 
+							</div>							
+							</div> 
+							<button data-Id='0' class="btn-text btn-close clickable btn-text">CONTINUE</button>
+						</div>
+					</div>
+					<div class="question workbook cash_statement">
+							<div id="workbook2_Heading" style="">SOLVENCY QUICK QUIZ: RATIOS</div>
+							<div id="workbook2_child0" style=""> 
+								<div class="headitems"></div>
+								<div class="subitem1 boldLato"> 
+									<div class="celldivider" ></div>
+									<span class="item">Debt Ratio (%) :</span>
+									<span class="item">
+										<span class="numbers90"><input type="number" step='0.01' class="workbook-input numbers" data-itemindex="0"></span>
+									</span> 
+								</div> 
+								<div class="subitem1 boldLato"> 
+									<div class="celldivider" ></div>
+									<span class="item">Financial Debt Coverage :</span>
+									<span class="item">
+										<span class="numbers90"><input type="number" step='0.01' class="workbook-input numbers" data-itemindex="1"></span>
+									</span> 
+								</div> 
+								<div class="subitem1 boldLato"> 
+									<div class="celldivider"></div>
+									<span class="item">Current Financial Debt Coverage :</span> 
+									<span class="item">
+										<span class="numbers90"><input type="number" step='0.01' class="workbook-input numbers" data-itemindex="2"></span>
+									</span>
+								</div> 
+							</div>
+							<button data-ui="submit" class="submit btn-text clickable disabled">SUBMIT</button>
+							<div data-region="feedback" class="feedback-holder"></div>
+					</div>
+					
+					<div data-region="feedback" class="feedback-holder">
+						<div class="text-panel">
+							<div class="text-content">
+									<h3 class="title-text">Not Quite</h3>
+									<div class="primary-text"><p>Be sure to indicate the move of 1100 in all fields.</p></div>
+									<button data-ui="close" class="btn-close show clickable btn-icon"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	
+</body>
+</html>

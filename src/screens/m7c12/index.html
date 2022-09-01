@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m7c12/style.css">
+	<script type="text/javascript" src="src/screens/m7c12/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_7/ga100-01.jpg',
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {			
+			$('.activityContainer').fadeIn(200);					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer" >
+		<div class="content">
+			<div class='panel'>
+				<div class="text-content">
+						<h1 class="title-text">EVALUATION FORM</h1>				
+						<div class="primary-text">
+							<p>After finishing this FAST primer, you are expected to evaluate the experience of learning using this resource. Your evaluation answers will remain completely anonymous. The objective is to provide constructive feedback to the faculty to provide input for the further development of this primer with the aim of quality improvement. </p>
+							<p>Click the button below the finish this course and access the evaluation survey:</p>
+						</div>
+						<button data-path='https://vlerick.eu.qualtrics.com/jfe/form/SV_4NKJp4trONvz9MF' class="complete_course btn-text clickable">COMPLETE COURSE</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

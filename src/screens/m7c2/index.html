@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m7c2/style.css">
+	<script type="text/javascript" src="src/screens/m7c2/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+
+	
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_7/ga020-header-block.jpg',
+		'assets/images/screens/module_7/ga020-graphic-text-block-01.jpg',	
+		'assets/images/screens/module_7/ga020-graphic-block-01.jpg'
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {
+		    $('.content-block').css('opacity','0');
+			$('.activityContainer').fadeIn(200, function(){
+				fade();
+			});					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer scrolling" style="display:none">
+	<div class="content1">
+		<div class="content-blocks-holder">
+		<div class=" header-block aos-init aos-animate" data-aos="fade-up">
+		<!--  HEADER BLOCK --> 
+			<div class="header-holder">
+				<h1 class="title-text">A Static View of Solvency</h1>
+				<div class="primary-text"></div> 
+			</div>
+			<div style="background-image: url('assets/images/screens/module_7/ga020-header-block.jpg')" class="header-background-graphic background-graphic graphic"></div>
+		</div>
+		<div class="content-block short-text-block aos-init aos-animate" data-aos="fade-up">
+		<!-- SHORT TEXT BLOCK -->
+			<div class="primary-text"><span class="large-text">Scroll down to view all the information.</span> </div>
+		</div>
+		<div class="content-block subheader-block aos-init aos-animate" data-aos="fade-up">
+		<!-- SUB HEAD BLOCK -->
+			<h3 class="title-text">Long term financial risk</h3>
+		</div>
+		<div class="content-block long-text-block aos-init aos-animate" data-aos="fade-up">
+		<!-- LONG TEXT  BLOCK -->
+			<div class="primary-text">
+				<p>As with the analysis of the short term financial risk, we will first develop a static view on a firm’s long term financial risk, and then proceed with a dynamic perspective on its ability to meets its financial obligations. The static view examines a firm’s financial structure, focusing on the right-hand side (or the funding side) of the balance sheet. </p>
+			</div>
+		</div>
+		<div class="content-block graphic-text-block aos-init aos-animate" data-aos="fade-up">
+		<!-- GRAPHIC TEXT BLOCK -->
+			<div class="text-holder aos-init aos-animate" data-aos="fade-right">
+				<h3 class="title-text"></h3>
+				<div class="primary-text">
+					<p>The debt ratio indicates what fraction of a firm’s assets are financed with liabilities. While all liabilities are typically included in this ratio, it is confusingly referred to as debt ratio!</p>
+				</div>
+			</div>
+			<img src="assets/images/screens/module_7/ga020-graphic-text-block-01.jpg" class="graphic aos-init aos-animate" data-aos="fade-left">
+		</div>
+		<div class="content-block long-text-block aos-init" data-aos="fade-up">
+		<!-- LONG TEXT  BLOCK -->
+			<div class="primary-text">
+				<p>The debt ratio is an indication of the firm’s long term financial risk, with a higher ratio pointing towards a higher risk. Everything else equal, debt is more risky than equity from a firm’s perspective, as debt entails contractual interest and principal payments. But using more debt can boost the return for shareholders through the financial leverage effect. Adding debt hence comes with advantages and drawbacks. Many variants of this ratio exist. For example, some include all liabilities, others focus on financial debt only. Some include both long term and short term debt, while other focus on long term or short term debt.</p>
+			</div>
+		</div>
+		<div class="content-block subheader-block aos-init" data-aos="fade-up">
+		<!-- SUB HEAD BLOCK -->
+			<h3 class="title-text">An adequate financial structure</h3>
+		</div>
+		<div class="content-block short-text-block aos-init" data-aos="fade-up">
+		<!-- SHORT TEXT BLOCK -->
+			<div class="primary-text">
+				<span class="large-text">What is a good benchmark for a firm’s financial structure?</span> <p>It is impossible to put forward a general benchmark for an optimal debt level. This will highly depend on the firm’s operations and the shareholders’ risk appetite. We observe huge differences in firms’ financial structure, even within the same industry.</p>
+			</div>
+		</div>
+		<div class="content-block graphic-block aos-init" data-aos="fade-up">
+		<!-- GRAPHIC BLOCK -->
+			<img src="assets/images/screens/module_7/ga020-graphic-block-01.png" class="graphic">
+		</div>
+		<div class="content-block callout-block aos-init" data-aos="fade-up">
+		<!-- CALLOUT BLOCK -->
+			<div class="primary-text">
+				<p>The most important determinant of a firm’s optimal level of financial obligations is its ability to generate sufficient cash flows from its operations to repay its financial obligations. We will explore this further in the dynamic solvency analysis.</p>
+			</div>
+			<div class="yellow-angle"></div>
+		</div>
+		<div class="bottom-yellow-angle"></div>
+		</div>
+	</div>
+	</div>	
+</body>
+<script>		
+	function fade() {
+		var total = 0;
+		$('.content-block').each(function() {				  
+		  var objectBottom = $(this).offset().top + $(this).outerHeight();
+		  var windowBottom = $(window).scrollTop() + $(window).innerHeight();		 
+		  if (objectBottom-120 < windowBottom) {		   
+			if ($(this).css('opacity')==0) {$(this).fadeTo(400,1);$(this).addClass('fadeUp').removeClass('fadeDown');}
+		  } else {
+			if ($(this).css('opacity')==1) {$(this).fadeTo(400,0);$(this).addClass('fadeDown').removeClass('fadeUp');}
+		  }					
+			total += $(this).height();		 		
+		});		
+		if($('.content1').scrollTop() +$('.content1').innerHeight() >= $('.content1')[0].scrollHeight-40) {
+            complete_page();
+			enableNextBtn();
+        }
+	  }	
+	$('.content1').scroll(function() {fade();});
+</script>
+</html>

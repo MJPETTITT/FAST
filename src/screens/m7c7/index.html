@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="js/required/jquery.js"></script>
+	<script type="text/javascript" src="js/required/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="src/screens/m7c7/style.css">
+	<script type="text/javascript" src="src/screens/m7c7/script.js"></script>
+	<script type="text/javascript" src="js/required/jquery.preload.js"></script>
+
+	
+	<script>	
+	var imgs = [
+		'assets/images/screens/module_7/ga070-header-block.jpg',
+		'assets/images/screens/module_7/ga070-graphic-text-block-01.jpg'
+	];
+	
+	$.preload(imgs, {
+		each: function (count) {
+		   
+		},
+		all: function () {
+		    $('.content-block').css('opacity','0');
+			$('.activityContainer').fadeIn(200, function(){
+				fade();
+			});					  
+		}  
+	});			
+	</script>
+</head>
+<body>
+	<div class="activityContainer scrolling" style="display:none">
+	<div class="content1">
+		<div class="content-blocks-holder">
+		<div class=" header-block aos-init aos-animate" data-aos="fade-up">
+			<!--  HEADER BLOCK --> 
+			<div class="header-holder">
+				<h1 class="title-text">Dynamic Solvency Ratios</h1>
+				<div class="primary-text"></div> 
+			</div>
+			<div style="background-image: url('assets/images/screens/module_7/ga070-header-block.jpg')" class="header-background-graphic background-graphic graphic"></div>
+		</div>
+		<div class="content-block short-text-block aos-init aos-animate" data-aos="fade-up">
+		<!-- SHORT TEXT BLOCK -->
+			<div class="primary-text"><span class="large-text">Scroll down to view all the information.</span> </div>
+		</div>
+		<div class="content-block subheader-block aos-init aos-animate" data-aos="fade-up">
+		<!-- SUB HEAD BLOCK -->
+			<h3 class="title-text">Case Examples</h3>
+		</div>
+		<div class="content-block graphic-text-block aos-init aos-animate" data-aos="fade-up">
+			<!-- GRAPHIC TEXT BLOCK -->
+			<div class="text-holder aos-init aos-animate" data-aos="fade-right">
+				<h3 class="title-text"></h3>
+				<div class="primary-text">
+					<p>Let’s go back to the example of the e-commerce companies and analyse their dynamic solvency ratios. While Amazon has the highest proportion of its assets financed with liabilities and Zalando the lowest, the dynamic ratios show a different picture of their financial risk.</p>
+				</div>
+			</div>
+			<img src="assets/images/screens/module_7/ga070-graphic-text-block-01.jpg" class="graphic aos-init aos-animate" data-aos="fade-left">
+
+		</div>
+		<div class="content-block subheader-block aos-init" data-aos="fade-up">
+			<!-- SUB HEAD BLOCK -->
+			<h3 class="title-text">Amazon</h3>
+		</div>
+		<div class="content-block long-text-block aos-init" data-aos="fade-up">
+		<!-- LONG TEXT  BLOCK -->
+			<div class="primary-text">
+				<p>Amazon generates high levels of operational cash flow; it is able to cover more than 80% of its financial debt with its current cash flow. If Amazon would use all its cash flow to repay its financial debt, it would need only 1.2 years to do so. This is even more remarkable, as all Amazon’s financial debt is long term. Amazon has no debt that matures within the year.</p>
+			</div>
+		</div>
+		<div class="content-block subheader-block aos-init" data-aos="fade-up">
+		<!-- SUB HEAD BLOCK -->
+		<h3 class="title-text">Zalando</h3>
+		</div>
+		<div class="content-block long-text-block aos-init" data-aos="fade-up">
+			<!-- LONG TEXT  BLOCK -->
+			<div class="primary-text">
+				<p>In contrast, Zalando has a relatively lower level of operational cash flows, which makes that it can only repay 57% of its financial debt with its cash flows. More worryingly, however, Zalando can only repay 69% of its short term financial debt with its cash flows. This has led to a decrease in its cash position. In the medium term, Zalando needs to increase its operational cash flow in order to be able to repay its debt from the money it makes.</p>
+			</div>
+		</div>
+		<div class="content-block subheader-block aos-init" data-aos="fade-up">
+		<!-- SUB HEAD BLOCK -->
+			<h3 class="title-text">Alibaba</h3>
+		</div>
+		<div class="content-block long-text-block aos-init" data-aos="fade-up">
+		<!-- LONG TEXT  BLOCK -->
+			<div class="primary-text">
+				<p>Alibaba’s debt repayment capacity, in contrast, is healthy: with its operational cash flow, it is able to cover its current debt obligations more than 5 times. It hence has a lot of cash left to invest – or to pay out to its shareholders – after having serviced all its contractual debt obligations.</p>
+			</div>
+		</div>
+		<div class="bottom-yellow-angle"></div>
+		</div>	
+</body>
+<script>		
+	function fade() {
+		var total = 0;
+		$('.content-block').each(function() {				  
+		  var objectBottom = $(this).offset().top + $(this).outerHeight();
+		  var windowBottom = $(window).scrollTop() + $(window).innerHeight();		 
+		  if (objectBottom-120 < windowBottom) {		   
+			if ($(this).css('opacity')==0) {$(this).fadeTo(400,1);$(this).addClass('fadeUp').removeClass('fadeDown');}
+		  } else {
+			if ($(this).css('opacity')==1) {$(this).fadeTo(400,0);$(this).addClass('fadeDown').removeClass('fadeUp');}
+		  }					
+			total += $(this).height();		 		
+		});		
+		if($('.content1').scrollTop() +$('.content1').innerHeight() >= $('.content1')[0].scrollHeight-40) {
+            complete_page();
+			enableNextBtn();
+        }
+	  }	
+	$('.content1').scroll(function() {fade();});
+</script>
+</html>
